@@ -11,18 +11,17 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{C923774C-38D1-9FFC-00F4-4FF98DB2A536}</ProjectGuid>
-    <PlatformToolset>v110</PlatformToolset>
+    <ProjectGuid>{D4CC177C-9969-0FE3-503D-08CB82EBFA7F}</ProjectGuid>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v110</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
@@ -33,9 +32,7 @@
   <ImportGroup Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
-  <PropertyGroup Label="UserMacros">
-    <PlatformToolset>v110</PlatformToolset>
-  </PropertyGroup>
+  <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\Debug\</OutDir>
@@ -46,7 +43,6 @@
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">GeneticProgrammingSynthesizer</TargetName>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
-    <PlatformToolset>v110</PlatformToolset>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Midl>
@@ -59,14 +55,14 @@
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
-      <AdditionalIncludeDirectories>..\..\JuceLibraryCode;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;DEBUG;_DEBUG;JUCER_VS2012_78A501F=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\JuceLibraryCode;c:\SDKs\vstsdk2.4;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;DEBUG;_DEBUG;JUCER_VS2010_78A501D=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <PrecompiledHeader />
-      <AssemblerListingLocation>$(IntDir)\</AssemblerListingLocation>
-      <ObjectFileName>$(IntDir)\</ObjectFileName>
-      <ProgramDataBaseFileName>$(IntDir)\</ProgramDataBaseFileName>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
       <WarningLevel>Level4</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
@@ -75,18 +71,17 @@
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ResourceCompile>
     <Link>
-      <OutputFile>$(OutDir)\GeneticProgrammingSynthesizer.exe</OutputFile>
+      <OutputFile>.\Debug\GeneticProgrammingSynthesizer.dll</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <IgnoreSpecificDefaultLibraries>libcmt.lib; msvcrt.lib;;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ProgramDatabaseFile>$(IntDir)\GeneticProgrammingSynthesizer.pdb</ProgramDatabaseFile>
+      <ProgramDatabaseFile>.\Debug\GeneticProgrammingSynthesizer.pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
       <TargetMachine>MachineX86</TargetMachine>
-      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
     </Link>
     <Bscmake>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <OutputFile>$(IntDir)\GeneticProgrammingSynthesizer.bsc</OutputFile>
+      <OutputFile>.\Debug\GeneticProgrammingSynthesizer.bsc</OutputFile>
     </Bscmake>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -98,15 +93,15 @@
       <HeaderFileName />
     </Midl>
     <ClCompile>
-      <Optimization>MinSpace</Optimization>
-      <AdditionalIncludeDirectories>..\..\JuceLibraryCode;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;JUCER_VS2012_78A501F=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories>..\..\JuceLibraryCode;c:\SDKs\vstsdk2.4;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;JUCER_VS2010_78A501D=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <PrecompiledHeader />
-      <AssemblerListingLocation>$(IntDir)\</AssemblerListingLocation>
-      <ObjectFileName>$(IntDir)\</ObjectFileName>
-      <ProgramDataBaseFileName>$(IntDir)\</ProgramDataBaseFileName>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
       <WarningLevel>Level4</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
@@ -115,11 +110,11 @@
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ResourceCompile>
     <Link>
-      <OutputFile>$(OutDir)\GeneticProgrammingSynthesizer.exe</OutputFile>
+      <OutputFile>.\Release\GeneticProgrammingSynthesizer.dll</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <GenerateDebugInformation>false</GenerateDebugInformation>
-      <ProgramDatabaseFile>$(IntDir)\GeneticProgrammingSynthesizer.pdb</ProgramDatabaseFile>
+      <ProgramDatabaseFile>.\Release\GeneticProgrammingSynthesizer.pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
       <TargetMachine>MachineX86</TargetMachine>
       <OptimizeReferences>true</OptimizeReferences>
@@ -127,25 +122,53 @@
     </Link>
     <Bscmake>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <OutputFile>$(IntDir)\GeneticProgrammingSynthesizer.bsc</OutputFile>
+      <OutputFile>.\Release\GeneticProgrammingSynthesizer.bsc</OutputFile>
     </Bscmake>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Source\Plugin\GPPluginEditor.cpp" />
-    <ClCompile Include="..\..\Source\Plugin\GPPluginProcessor.cpp" />
-    <ClCompile Include="..\..\Source\Standalone\GPStandaloneDialog.cpp" />
-    <ClCompile Include="..\..\Source\Standalone\Main.cpp" />
-    <ClCompile Include="..\..\Source\Synth\DelayNode.cpp" />
-    <ClCompile Include="..\..\Source\Synth\FilterNode.cpp" />
-    <ClCompile Include="..\..\Source\Synth\FunctionNode.cpp" />
+    <ClCompile Include="..\..\Source\Dependencies\DSPFilters\Bessel.cpp" />
+    <ClCompile Include="..\..\Source\Dependencies\DSPFilters\Biquad.cpp" />
+    <ClCompile Include="..\..\Source\Dependencies\DSPFilters\Butterworth.cpp" />
+    <ClCompile Include="..\..\Source\Dependencies\DSPFilters\Cascade.cpp" />
+    <ClCompile Include="..\..\Source\Dependencies\DSPFilters\ChebyshevI.cpp" />
+    <ClCompile Include="..\..\Source\Dependencies\DSPFilters\ChebyshevII.cpp" />
+    <ClCompile Include="..\..\Source\Dependencies\DSPFilters\Custom.cpp" />
+    <ClCompile Include="..\..\Source\Dependencies\DSPFilters\Design.cpp" />
+    <ClCompile Include="..\..\Source\Dependencies\DSPFilters\Documentation.cpp" />
+    <ClCompile Include="..\..\Source\Dependencies\DSPFilters\Elliptic.cpp" />
+    <ClCompile Include="..\..\Source\Dependencies\DSPFilters\Filter.cpp" />
+    <ClCompile Include="..\..\Source\Dependencies\DSPFilters\Legendre.cpp" />
+    <ClCompile Include="..\..\Source\Dependencies\DSPFilters\Param.cpp" />
+    <ClCompile Include="..\..\Source\Dependencies\DSPFilters\PoleFilter.cpp" />
+    <ClCompile Include="..\..\Source\Dependencies\DSPFilters\RBJ.cpp" />
+    <ClCompile Include="..\..\Source\Dependencies\DSPFilters\RootFinder.cpp" />
+    <ClCompile Include="..\..\Source\Dependencies\DSPFilters\State.cpp" />
+    <ClCompile Include="..\..\Source\Dependencies\kissfft\kiss_fft.c" />
+    <ClCompile Include="..\..\Source\Dependencies\kissfft\kiss_fftr.c" />
+    <ClCompile Include="..\..\Source\Plugin\PluginEditor.cpp" />
+    <ClCompile Include="..\..\Source\Plugin\PluginProcessor.cpp" />
     <ClCompile Include="..\..\Source\Synth\GPNetwork.cpp" />
-    <ClCompile Include="..\..\Source\Synth\OscilNode.cpp" />
-    <ClCompile Include="..\..\Source\Synth\ValueNode.cpp" />
-    <ClCompile Include="..\..\Source\GPExperiment.cpp" />
+    <ClCompile Include="..\..\Source\Synth\GPSynth.cpp" />
+    <ClCompile Include="..\..\Source\Synth\Nodes\ADSRNode.cpp" />
+    <ClCompile Include="..\..\Source\Synth\Nodes\ConditionalNode.cpp" />
+    <ClCompile Include="..\..\Source\Synth\Nodes\ConstantNode.cpp" />
+    <ClCompile Include="..\..\Source\Synth\Nodes\DelayNode.cpp" />
+    <ClCompile Include="..\..\Source\Synth\Nodes\FilterNode.cpp" />
+    <ClCompile Include="..\..\Source\Synth\Nodes\FunctionNode.cpp" />
+    <ClCompile Include="..\..\Source\Synth\Nodes\ModOscilNode.cpp" />
+    <ClCompile Include="..\..\Source\Synth\Nodes\NoiseNode.cpp" />
+    <ClCompile Include="..\..\Source\Synth\Nodes\OscilNode.cpp" />
+    <ClCompile Include="..\..\Source\Synth\Nodes\TimeNode.cpp" />
+    <ClCompile Include="..\..\Source\Synth\Nodes\VariableNode.cpp" />
+    <ClCompile Include="..\..\Source\Common\GPFunctions.cpp" />
+    <ClCompile Include="..\..\Source\Common\GPRandom.cpp" />
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_basics\buffers\juce_AudioDataConverters.cpp">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_basics\buffers\juce_AudioSampleBuffer.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_basics\buffers\juce_FloatVectorOperations.cpp">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_basics\midi\juce_MidiBuffer.cpp">
@@ -164,6 +187,9 @@
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_basics\effects\juce_IIRFilter.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_basics\effects\juce_LagrangeInterpolator.cpp">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_basics\sources\juce_BufferingAudioSource.cpp">
@@ -289,6 +315,9 @@
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_formats\codecs\juce_FlacAudioFormat.cpp">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_formats\codecs\juce_LAMEEncoderAudioFormat.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_formats\codecs\juce_MP3AudioFormat.cpp">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
@@ -338,21 +367,6 @@
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_processors\scanning\juce_PluginListComponent.cpp">
-      <ExcludedFromBuild>true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_utils\gui\juce_AudioDeviceSelectorComponent.cpp">
-      <ExcludedFromBuild>true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_utils\gui\juce_AudioThumbnail.cpp">
-      <ExcludedFromBuild>true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_utils\gui\juce_AudioThumbnailCache.cpp">
-      <ExcludedFromBuild>true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_utils\gui\juce_MidiKeyboardComponent.cpp">
-      <ExcludedFromBuild>true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_utils\players\juce_AudioProcessorPlayer.cpp">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_core\text\juce_CharacterFunctions.cpp">
@@ -1150,11 +1164,48 @@
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_gui_extra\native\juce_win32_WebBrowserComponent.cpp">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_opengl\opengl\juce_OpenGLContext.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_opengl\opengl\juce_OpenGLFrameBuffer.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_opengl\opengl\juce_OpenGLGraphicsContext.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_opengl\opengl\juce_OpenGLHelpers.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_opengl\opengl\juce_OpenGLImage.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_opengl\opengl\juce_OpenGLPixelFormat.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_opengl\opengl\juce_OpenGLShaderProgram.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_opengl\opengl\juce_OpenGLTexture.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_video\native\juce_android_CameraDevice.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_video\native\juce_win32_CameraDevice.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_video\native\juce_win32_DirectShowComponent.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_video\native\juce_win32_QuickTimeMovieComponent.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\BinaryData.cpp" />
+    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_plugin_client\AAX\juce_AAX_Wrapper.cpp" />
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_basics\juce_audio_basics.cpp" />
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_devices\juce_audio_devices.cpp" />
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_formats\juce_audio_formats.cpp" />
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_processors\juce_audio_processors.cpp" />
-    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_utils\juce_audio_utils.cpp" />
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_core\juce_core.cpp" />
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_cryptography\juce_cryptography.cpp" />
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_data_structures\juce_data_structures.cpp" />
@@ -1162,23 +1213,76 @@
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_graphics\juce_graphics.cpp" />
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_gui_basics\juce_gui_basics.cpp" />
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_gui_extra\juce_gui_extra.cpp" />
+    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_opengl\juce_opengl.cpp" />
+    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_plugin_client\utility\juce_PluginUtilities.cpp" />
+    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_plugin_client\RTAS\juce_RTAS_DigiCode1.cpp">
+      <CallingConvention>StdCall</CallingConvention>
+    </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_plugin_client\RTAS\juce_RTAS_DigiCode2.cpp">
+      <CallingConvention>StdCall</CallingConvention>
+    </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_plugin_client\RTAS\juce_RTAS_DigiCode3.cpp">
+      <CallingConvention>StdCall</CallingConvention>
+    </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_plugin_client\RTAS\juce_RTAS_WinUtilities.cpp">
+      <CallingConvention>StdCall</CallingConvention>
+    </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_plugin_client\RTAS\juce_RTAS_Wrapper.cpp">
+      <CallingConvention>StdCall</CallingConvention>
+    </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_video\juce_video.cpp" />
+    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_plugin_client\VST\juce_VST_Wrapper.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Source\Plugin\GPPluginEditor.h" />
-    <ClInclude Include="..\..\Source\Plugin\GPPluginProcessor.h" />
-    <ClInclude Include="..\..\Source\Standalone\GPStandaloneDialog.h" />
-    <ClInclude Include="..\..\Source\Synth\DelayNode.h" />
-    <ClInclude Include="..\..\Source\Synth\FilterNode.h" />
-    <ClInclude Include="..\..\Source\Synth\FunctionNode.h" />
-    <ClInclude Include="..\..\Source\Synth\GPCore.h" />
-    <ClInclude Include="..\..\Source\Synth\GPFunctions.h" />
+    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\Bessel.h" />
+    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\Biquad.h" />
+    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\Butterworth.h" />
+    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\Cascade.h" />
+    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\ChebyshevI.h" />
+    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\ChebyshevII.h" />
+    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\Common.h" />
+    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\Custom.h" />
+    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\Design.h" />
+    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\Dsp.h" />
+    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\Elliptic.h" />
+    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\Filter.h" />
+    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\Layout.h" />
+    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\Legendre.h" />
+    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\MathSupplement.h" />
+    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\Params.h" />
+    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\PoleFilter.h" />
+    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\RBJ.h" />
+    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\RootFinder.h" />
+    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\SmoothedFilter.h" />
+    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\State.h" />
+    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\Types.h" />
+    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\Utilities.h" />
+    <ClInclude Include="..\..\Source\Dependencies\kissfft\_kiss_fft_guts.h" />
+    <ClInclude Include="..\..\Source\Dependencies\kissfft\kiss_fft.h" />
+    <ClInclude Include="..\..\Source\Dependencies\kissfft\kiss_fftr.h" />
+    <ClInclude Include="..\..\Source\Plugin\PluginEditor.h" />
+    <ClInclude Include="..\..\Source\Plugin\PluginProcessor.h" />
     <ClInclude Include="..\..\Source\Synth\GPNetwork.h" />
     <ClInclude Include="..\..\Source\Synth\GPNode.h" />
-    <ClInclude Include="..\..\Source\Synth\OscilNode.h" />
-    <ClInclude Include="..\..\Source\Synth\ValueNode.h" />
-    <ClInclude Include="..\..\Source\GPExperiment.h" />
+    <ClInclude Include="..\..\Source\Synth\GPSynth.h" />
+    <ClInclude Include="..\..\Source\Synth\Nodes\ADSRNode.h" />
+    <ClInclude Include="..\..\Source\Synth\Nodes\ConditionalNode.h" />
+    <ClInclude Include="..\..\Source\Synth\Nodes\ConstantNode.h" />
+    <ClInclude Include="..\..\Source\Synth\Nodes\DelayNode.h" />
+    <ClInclude Include="..\..\Source\Synth\Nodes\FilterNode.h" />
+    <ClInclude Include="..\..\Source\Synth\Nodes\FunctionNode.h" />
+    <ClInclude Include="..\..\Source\Synth\Nodes\ModOscilNode.h" />
+    <ClInclude Include="..\..\Source\Synth\Nodes\NoiseNode.h" />
+    <ClInclude Include="..\..\Source\Synth\Nodes\OscilNode.h" />
+    <ClInclude Include="..\..\Source\Synth\Nodes\TimeNode.h" />
+    <ClInclude Include="..\..\Source\Synth\Nodes\VariableNode.h" />
+    <ClInclude Include="..\..\Source\Common\GPFunctions.h" />
+    <ClInclude Include="..\..\Source\Common\GPMutatableParam.h" />
+    <ClInclude Include="..\..\Source\Common\GPParams.h" />
+    <ClInclude Include="..\..\Source\Common\GPRandom.h" />
     <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_basics\buffers\juce_AudioDataConverters.h" />
     <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_basics\buffers\juce_AudioSampleBuffer.h" />
+    <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_basics\buffers\juce_FloatVectorOperations.h" />
     <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_basics\midi\juce_MidiBuffer.h" />
     <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_basics\midi\juce_MidiFile.h" />
     <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_basics\midi\juce_MidiKeyboardState.h" />
@@ -1186,6 +1290,7 @@
     <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_basics\midi\juce_MidiMessageSequence.h" />
     <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_basics\effects\juce_Decibels.h" />
     <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_basics\effects\juce_IIRFilter.h" />
+    <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_basics\effects\juce_LagrangeInterpolator.h" />
     <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_basics\effects\juce_Reverb.h" />
     <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_basics\sources\juce_AudioSource.h" />
     <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_basics\sources\juce_BufferingAudioSource.h" />
@@ -1216,9 +1321,11 @@
     <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_formats\format\juce_AudioFormatReaderSource.h" />
     <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_formats\format\juce_AudioFormatWriter.h" />
     <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_formats\format\juce_AudioSubsectionReader.h" />
+    <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_formats\format\juce_MemoryMappedAudioFormatReader.h" />
     <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_formats\codecs\juce_AiffAudioFormat.h" />
     <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_formats\codecs\juce_CoreAudioFormat.h" />
     <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_formats\codecs\juce_FlacAudioFormat.h" />
+    <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_formats\codecs\juce_LAMEEncoderAudioFormat.h" />
     <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_formats\codecs\juce_MP3AudioFormat.h" />
     <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_formats\codecs\juce_OggVorbisAudioFormat.h" />
     <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_formats\codecs\juce_QuickTimeAudioFormat.h" />
@@ -1226,6 +1333,14 @@
     <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_formats\codecs\juce_WindowsMediaAudioFormat.h" />
     <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_formats\sampler\juce_Sampler.h" />
     <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_formats\juce_audio_formats.h" />
+    <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_plugin_client\RTAS\juce_RTAS_DigiCode_Header.h" />
+    <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_plugin_client\utility\juce_CarbonVisibility.h" />
+    <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_plugin_client\utility\juce_CheckSettingMacros.h" />
+    <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_plugin_client\utility\juce_FakeMouseMoveGenerator.h" />
+    <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_plugin_client\utility\juce_IncludeModuleHeaders.h" />
+    <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_plugin_client\utility\juce_IncludeSystemHeaders.h" />
+    <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_plugin_client\utility\juce_PluginHostType.h" />
+    <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_plugin_client\juce_audio_plugin_client.h" />
     <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_processors\processors\juce_AudioPlayHead.h" />
     <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_processors\processors\juce_AudioPluginInstance.h" />
     <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_processors\processors\juce_AudioProcessor.h" />
@@ -1245,13 +1360,6 @@
     <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_processors\scanning\juce_PluginDirectoryScanner.h" />
     <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_processors\scanning\juce_PluginListComponent.h" />
     <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_processors\juce_audio_processors.h" />
-    <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_utils\gui\juce_AudioDeviceSelectorComponent.h" />
-    <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_utils\gui\juce_AudioThumbnail.h" />
-    <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_utils\gui\juce_AudioThumbnailBase.h" />
-    <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_utils\gui\juce_AudioThumbnailCache.h" />
-    <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_utils\gui\juce_MidiKeyboardComponent.h" />
-    <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_utils\players\juce_AudioProcessorPlayer.h" />
-    <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_utils\juce_audio_utils.h" />
     <ClInclude Include="..\..\JuceLibraryCode\modules\juce_core\text\juce_CharacterFunctions.h" />
     <ClInclude Include="..\..\JuceLibraryCode\modules\juce_core\text\juce_CharPointer_ASCII.h" />
     <ClInclude Include="..\..\JuceLibraryCode\modules\juce_core\text\juce_CharPointer_UTF16.h" />
@@ -1574,22 +1682,34 @@
     <ClInclude Include="..\..\JuceLibraryCode\modules\juce_gui_extra\misc\juce_WebBrowserComponent.h" />
     <ClInclude Include="..\..\JuceLibraryCode\modules\juce_gui_extra\native\juce_mac_CarbonViewWrapperComponent.h" />
     <ClInclude Include="..\..\JuceLibraryCode\modules\juce_gui_extra\juce_gui_extra.h" />
+    <ClInclude Include="..\..\JuceLibraryCode\modules\juce_opengl\opengl\juce_Draggable3DOrientation.h" />
+    <ClInclude Include="..\..\JuceLibraryCode\modules\juce_opengl\opengl\juce_Matrix3D.h" />
+    <ClInclude Include="..\..\JuceLibraryCode\modules\juce_opengl\opengl\juce_OpenGLContext.h" />
+    <ClInclude Include="..\..\JuceLibraryCode\modules\juce_opengl\opengl\juce_OpenGLFrameBuffer.h" />
+    <ClInclude Include="..\..\JuceLibraryCode\modules\juce_opengl\opengl\juce_OpenGLGraphicsContext.h" />
+    <ClInclude Include="..\..\JuceLibraryCode\modules\juce_opengl\opengl\juce_OpenGLHelpers.h" />
+    <ClInclude Include="..\..\JuceLibraryCode\modules\juce_opengl\opengl\juce_OpenGLImage.h" />
+    <ClInclude Include="..\..\JuceLibraryCode\modules\juce_opengl\opengl\juce_OpenGLPixelFormat.h" />
+    <ClInclude Include="..\..\JuceLibraryCode\modules\juce_opengl\opengl\juce_OpenGLRenderer.h" />
+    <ClInclude Include="..\..\JuceLibraryCode\modules\juce_opengl\opengl\juce_OpenGLShaderProgram.h" />
+    <ClInclude Include="..\..\JuceLibraryCode\modules\juce_opengl\opengl\juce_OpenGLTexture.h" />
+    <ClInclude Include="..\..\JuceLibraryCode\modules\juce_opengl\opengl\juce_Quaternion.h" />
+    <ClInclude Include="..\..\JuceLibraryCode\modules\juce_opengl\opengl\juce_Vector3D.h" />
+    <ClInclude Include="..\..\JuceLibraryCode\modules\juce_opengl\native\juce_MissingGLDefinitions.h" />
+    <ClInclude Include="..\..\JuceLibraryCode\modules\juce_opengl\native\juce_OpenGL_android.h" />
+    <ClInclude Include="..\..\JuceLibraryCode\modules\juce_opengl\native\juce_OpenGL_ios.h" />
+    <ClInclude Include="..\..\JuceLibraryCode\modules\juce_opengl\native\juce_OpenGL_linux.h" />
+    <ClInclude Include="..\..\JuceLibraryCode\modules\juce_opengl\native\juce_OpenGL_osx.h" />
+    <ClInclude Include="..\..\JuceLibraryCode\modules\juce_opengl\native\juce_OpenGL_win32.h" />
+    <ClInclude Include="..\..\JuceLibraryCode\modules\juce_opengl\native\juce_OpenGLExtensions.h" />
+    <ClInclude Include="..\..\JuceLibraryCode\modules\juce_opengl\juce_opengl.h" />
+    <ClInclude Include="..\..\JuceLibraryCode\modules\juce_video\playback\juce_DirectShowComponent.h" />
+    <ClInclude Include="..\..\JuceLibraryCode\modules\juce_video\playback\juce_QuickTimeMovieComponent.h" />
+    <ClInclude Include="..\..\JuceLibraryCode\modules\juce_video\capture\juce_CameraDevice.h" />
+    <ClInclude Include="..\..\JuceLibraryCode\modules\juce_video\juce_video.h" />
     <ClInclude Include="..\..\JuceLibraryCode\AppConfig.h" />
+    <ClInclude Include="..\..\JuceLibraryCode\BinaryData.h" />
     <ClInclude Include="..\..\JuceLibraryCode\JuceHeader.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="..\..\JuceLibraryCode\modules\juce_audio_basics\juce_module_info" />
-    <None Include="..\..\JuceLibraryCode\modules\juce_audio_devices\juce_module_info" />
-    <None Include="..\..\JuceLibraryCode\modules\juce_audio_formats\juce_module_info" />
-    <None Include="..\..\JuceLibraryCode\modules\juce_audio_processors\juce_module_info" />
-    <None Include="..\..\JuceLibraryCode\modules\juce_audio_utils\juce_module_info" />
-    <None Include="..\..\JuceLibraryCode\modules\juce_core\juce_module_info" />
-    <None Include="..\..\JuceLibraryCode\modules\juce_cryptography\juce_module_info" />
-    <None Include="..\..\JuceLibraryCode\modules\juce_data_structures\juce_module_info" />
-    <None Include="..\..\JuceLibraryCode\modules\juce_events\juce_module_info" />
-    <None Include="..\..\JuceLibraryCode\modules\juce_graphics\juce_module_info" />
-    <None Include="..\..\JuceLibraryCode\modules\juce_gui_basics\juce_module_info" />
-    <None Include="..\..\JuceLibraryCode\modules\juce_gui_extra\juce_module_info" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include=".\resources.rc" />
