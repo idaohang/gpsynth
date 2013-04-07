@@ -150,7 +150,6 @@
     <ClCompile Include="..\..\Source\Synth\GPNetwork.cpp" />
     <ClCompile Include="..\..\Source\Synth\GPSynth.cpp" />
     <ClCompile Include="..\..\Source\Synth\Nodes\ADSRNode.cpp" />
-    <ClCompile Include="..\..\Source\Synth\Nodes\ConditionalNode.cpp" />
     <ClCompile Include="..\..\Source\Synth\Nodes\ConstantNode.cpp" />
     <ClCompile Include="..\..\Source\Synth\Nodes\FilterNode.cpp" />
     <ClCompile Include="..\..\Source\Synth\Nodes\FunctionNode.cpp" />
@@ -1227,7 +1226,6 @@
     <ClInclude Include="..\..\Source\Synth\GPNode.h" />
     <ClInclude Include="..\..\Source\Synth\GPSynth.h" />
     <ClInclude Include="..\..\Source\Synth\Nodes\ADSRNode.h" />
-    <ClInclude Include="..\..\Source\Synth\Nodes\ConditionalNode.h" />
     <ClInclude Include="..\..\Source\Synth\Nodes\ConstantNode.h" />
     <ClInclude Include="..\..\Source\Synth\Nodes\FilterNode.h" />
     <ClInclude Include="..\..\Source\Synth\Nodes\FunctionNode.h" />
