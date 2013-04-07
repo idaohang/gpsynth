@@ -387,9 +387,6 @@
     <ClCompile Include="..\..\Source\Synth\Nodes\ADSRNode.cpp">
       <Filter>GeneticProgrammingSynthesizer\Source\Synth\Nodes</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\Synth\Nodes\ConditionalNode.cpp">
-      <Filter>GeneticProgrammingSynthesizer\Source\Synth\Nodes</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\Source\Synth\Nodes\ConstantNode.cpp">
       <Filter>GeneticProgrammingSynthesizer\Source\Synth\Nodes</Filter>
     </ClCompile>
@@ -1578,9 +1575,6 @@
       <Filter>GeneticProgrammingSynthesizer\Source\Synth</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\Synth\Nodes\ADSRNode.h">
-      <Filter>GeneticProgrammingSynthesizer\Source\Synth\Nodes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Synth\Nodes\ConditionalNode.h">
       <Filter>GeneticProgrammingSynthesizer\Source\Synth\Nodes</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\Synth\Nodes\ConstantNode.h">
