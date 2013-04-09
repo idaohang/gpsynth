@@ -1404,9 +1404,6 @@
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_gui_extra\native\juce_win32_WebBrowserComponent.cpp">
       <Filter>Juce Modules\juce_gui_extra\native</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\JuceLibraryCode\BinaryData.cpp">
-      <Filter>Juce Library Code</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_plugin_client\AAX\juce_AAX_Wrapper.cpp">
       <Filter>Juce Library Code</Filter>
     </ClCompile>
@@ -1464,10 +1461,10 @@
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_plugin_client\VST\juce_VST_Wrapper.cpp">
       <Filter>Juce Library Code</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\Plugin\PluginEditor.cpp">
+    <ClCompile Include="..\..\Source\Plugin\GPPluginEditor.cpp">
       <Filter>GeneticProgrammingSynthesizer\Source\Plugin</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\Plugin\PluginProcessor.cpp">
+    <ClCompile Include="..\..\Source\Plugin\GPPluginProcessor.cpp">
       <Filter>GeneticProgrammingSynthesizer\Source\Plugin</Filter>
     </ClCompile>
   </ItemGroup>
@@ -2801,19 +2798,16 @@
     <ClInclude Include="..\..\JuceLibraryCode\AppConfig.h">
       <Filter>Juce Library Code</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\JuceLibraryCode\BinaryData.h">
-      <Filter>Juce Library Code</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\JuceLibraryCode\JuceHeader.h">
       <Filter>Juce Library Code</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\Common\GPHelpers.h">
       <Filter>GeneticProgrammingSynthesizer\Source\Common</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Source\Plugin\PluginEditor.h">
+    <ClInclude Include="..\..\Source\Plugin\GPPluginEditor.h">
       <Filter>GeneticProgrammingSynthesizer\Source\Plugin</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Source\Plugin\PluginProcessor.h">
+    <ClInclude Include="..\..\Source\Plugin\GPPluginProcessor.h">
       <Filter>GeneticProgrammingSynthesizer\Source\Plugin</Filter>
     </ClInclude>
   </ItemGroup>

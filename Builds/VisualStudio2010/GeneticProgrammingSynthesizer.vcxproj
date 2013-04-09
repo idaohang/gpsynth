@@ -143,8 +143,8 @@
     <ClCompile Include="..\..\Source\Dependencies\DSPFilters\RBJ.cpp" />
     <ClCompile Include="..\..\Source\Dependencies\DSPFilters\RootFinder.cpp" />
     <ClCompile Include="..\..\Source\Dependencies\DSPFilters\State.cpp" />
-    <ClCompile Include="..\..\Source\Plugin\PluginEditor.cpp" />
-    <ClCompile Include="..\..\Source\Plugin\PluginProcessor.cpp" />
+    <ClCompile Include="..\..\Source\Plugin\GPPluginEditor.cpp" />
+    <ClCompile Include="..\..\Source\Plugin\GPPluginProcessor.cpp" />
     <ClCompile Include="..\..\Source\Synth\GPNetwork.cpp" />
     <ClCompile Include="..\..\Source\Synth\GPSynth.cpp" />
     <ClCompile Include="..\..\Source\Synth\Nodes\ADSRNode.cpp" />
@@ -1160,7 +1160,6 @@
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_gui_extra\native\juce_win32_WebBrowserComponent.cpp">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\JuceLibraryCode\BinaryData.cpp" />
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_plugin_client\AAX\juce_AAX_Wrapper.cpp" />
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_basics\juce_audio_basics.cpp" />
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_devices\juce_audio_devices.cpp" />
@@ -1216,8 +1215,8 @@
     <ClInclude Include="..\..\Source\Dependencies\DSPFilters\State.h" />
     <ClInclude Include="..\..\Source\Dependencies\DSPFilters\Types.h" />
     <ClInclude Include="..\..\Source\Dependencies\DSPFilters\Utilities.h" />
-    <ClInclude Include="..\..\Source\Plugin\PluginEditor.h" />
-    <ClInclude Include="..\..\Source\Plugin\PluginProcessor.h" />
+    <ClInclude Include="..\..\Source\Plugin\GPPluginEditor.h" />
+    <ClInclude Include="..\..\Source\Plugin\GPPluginProcessor.h" />
     <ClInclude Include="..\..\Source\Synth\GPNetwork.h" />
     <ClInclude Include="..\..\Source\Synth\GPNode.h" />
     <ClInclude Include="..\..\Source\Synth\GPSynth.h" />
@@ -1638,7 +1637,6 @@
     <ClInclude Include="..\..\JuceLibraryCode\modules\juce_gui_extra\native\juce_mac_CarbonViewWrapperComponent.h" />
     <ClInclude Include="..\..\JuceLibraryCode\modules\juce_gui_extra\juce_gui_extra.h" />
     <ClInclude Include="..\..\JuceLibraryCode\AppConfig.h" />
-    <ClInclude Include="..\..\JuceLibraryCode\BinaryData.h" />
     <ClInclude Include="..\..\JuceLibraryCode\JuceHeader.h" />
   </ItemGroup>
   <ItemGroup>
