@@ -13,9 +13,6 @@
     <Filter Include="GeneticProgrammingSynthesizer\Source\Dependencies\DSPFilters">
       <UniqueIdentifier>{430D16B8-F4BB-F207-4B2F-C531566204B2}</UniqueIdentifier>
     </Filter>
-    <Filter Include="GeneticProgrammingSynthesizer\Source\Dependencies\kissfft">
-      <UniqueIdentifier>{DF30D03C-4824-614D-6CF9-4EE7FE6ACEB9}</UniqueIdentifier>
-    </Filter>
     <Filter Include="GeneticProgrammingSynthesizer\Source\Plugin">
       <UniqueIdentifier>{4119D650-E5E7-C7FB-CAF1-3C5C0D1E7960}</UniqueIdentifier>
     </Filter>
@@ -365,18 +362,6 @@
     </ClCompile>
     <ClCompile Include="..\..\Source\Dependencies\DSPFilters\State.cpp">
       <Filter>GeneticProgrammingSynthesizer\Source\Dependencies\DSPFilters</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Dependencies\kissfft\kiss_fft.c">
-      <Filter>GeneticProgrammingSynthesizer\Source\Dependencies\kissfft</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Dependencies\kissfft\kiss_fftr.c">
-      <Filter>GeneticProgrammingSynthesizer\Source\Dependencies\kissfft</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Plugin\PluginEditor.cpp">
-      <Filter>GeneticProgrammingSynthesizer\Source\Plugin</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Plugin\PluginProcessor.cpp">
-      <Filter>GeneticProgrammingSynthesizer\Source\Plugin</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\Synth\GPNetwork.cpp">
       <Filter>GeneticProgrammingSynthesizer\Source\Synth</Filter>
@@ -1479,6 +1464,12 @@
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_plugin_client\VST\juce_VST_Wrapper.cpp">
       <Filter>Juce Library Code</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Plugin\PluginEditor.cpp">
+      <Filter>GeneticProgrammingSynthesizer\Source\Plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Plugin\PluginProcessor.cpp">
+      <Filter>GeneticProgrammingSynthesizer\Source\Plugin</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Source\Dependencies\DSPFilters\Bessel.h">
@@ -1549,21 +1540,6 @@
     </ClInclude>
     <ClInclude Include="..\..\Source\Dependencies\DSPFilters\Utilities.h">
       <Filter>GeneticProgrammingSynthesizer\Source\Dependencies\DSPFilters</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Dependencies\kissfft\_kiss_fft_guts.h">
-      <Filter>GeneticProgrammingSynthesizer\Source\Dependencies\kissfft</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Dependencies\kissfft\kiss_fft.h">
-      <Filter>GeneticProgrammingSynthesizer\Source\Dependencies\kissfft</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Dependencies\kissfft\kiss_fftr.h">
-      <Filter>GeneticProgrammingSynthesizer\Source\Dependencies\kissfft</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Plugin\PluginEditor.h">
-      <Filter>GeneticProgrammingSynthesizer\Source\Plugin</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Plugin\PluginProcessor.h">
-      <Filter>GeneticProgrammingSynthesizer\Source\Plugin</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\Synth\GPNetwork.h">
       <Filter>GeneticProgrammingSynthesizer\Source\Synth</Filter>
@@ -2830,6 +2806,15 @@
     </ClInclude>
     <ClInclude Include="..\..\JuceLibraryCode\JuceHeader.h">
       <Filter>Juce Library Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Common\GPHelpers.h">
+      <Filter>GeneticProgrammingSynthesizer\Source\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Plugin\PluginEditor.h">
+      <Filter>GeneticProgrammingSynthesizer\Source\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Plugin\PluginProcessor.h">
+      <Filter>GeneticProgrammingSynthesizer\Source\Plugin</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

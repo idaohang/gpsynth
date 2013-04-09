@@ -35,7 +35,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">GeneticProgrammingSynthesizer</TargetName>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
@@ -71,7 +71,7 @@
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ResourceCompile>
     <Link>
-      <OutputFile>.\Debug\GeneticProgrammingSynthesizer.dll</OutputFile>
+      <OutputFile>.\GeneticProgrammingSynthesizer.dll</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <IgnoreSpecificDefaultLibraries>libcmt.lib; msvcrt.lib;;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -143,8 +143,6 @@
     <ClCompile Include="..\..\Source\Dependencies\DSPFilters\RBJ.cpp" />
     <ClCompile Include="..\..\Source\Dependencies\DSPFilters\RootFinder.cpp" />
     <ClCompile Include="..\..\Source\Dependencies\DSPFilters\State.cpp" />
-    <ClCompile Include="..\..\Source\Dependencies\kissfft\kiss_fft.c" />
-    <ClCompile Include="..\..\Source\Dependencies\kissfft\kiss_fftr.c" />
     <ClCompile Include="..\..\Source\Plugin\PluginEditor.cpp" />
     <ClCompile Include="..\..\Source\Plugin\PluginProcessor.cpp" />
     <ClCompile Include="..\..\Source\Synth\GPNetwork.cpp" />
@@ -1194,6 +1192,7 @@
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_plugin_client\VST\juce_VST_Wrapper.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\Source\Common\GPHelpers.h" />
     <ClInclude Include="..\..\Source\Dependencies\DSPFilters\Bessel.h" />
     <ClInclude Include="..\..\Source\Dependencies\DSPFilters\Biquad.h" />
     <ClInclude Include="..\..\Source\Dependencies\DSPFilters\Butterworth.h" />
@@ -1217,9 +1216,6 @@
     <ClInclude Include="..\..\Source\Dependencies\DSPFilters\State.h" />
     <ClInclude Include="..\..\Source\Dependencies\DSPFilters\Types.h" />
     <ClInclude Include="..\..\Source\Dependencies\DSPFilters\Utilities.h" />
-    <ClInclude Include="..\..\Source\Dependencies\kissfft\_kiss_fft_guts.h" />
-    <ClInclude Include="..\..\Source\Dependencies\kissfft\kiss_fft.h" />
-    <ClInclude Include="..\..\Source\Dependencies\kissfft\kiss_fftr.h" />
     <ClInclude Include="..\..\Source\Plugin\PluginEditor.h" />
     <ClInclude Include="..\..\Source\Plugin\PluginProcessor.h" />
     <ClInclude Include="..\..\Source\Synth\GPNetwork.h" />
