@@ -375,13 +375,7 @@
     <ClCompile Include="..\..\Source\Synth\Nodes\ConstantNode.cpp">
       <Filter>GeneticProgrammingSynthesizer\Source\Synth\Nodes</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\Synth\Nodes\FilterNode.cpp">
-      <Filter>GeneticProgrammingSynthesizer\Source\Synth\Nodes</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\Source\Synth\Nodes\FunctionNode.cpp">
-      <Filter>GeneticProgrammingSynthesizer\Source\Synth\Nodes</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Synth\Nodes\ModOscilNode.cpp">
       <Filter>GeneticProgrammingSynthesizer\Source\Synth\Nodes</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\Synth\Nodes\NoiseNode.cpp">
@@ -1553,13 +1547,7 @@
     <ClInclude Include="..\..\Source\Synth\Nodes\ConstantNode.h">
       <Filter>GeneticProgrammingSynthesizer\Source\Synth\Nodes</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Source\Synth\Nodes\FilterNode.h">
-      <Filter>GeneticProgrammingSynthesizer\Source\Synth\Nodes</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Source\Synth\Nodes\FunctionNode.h">
-      <Filter>GeneticProgrammingSynthesizer\Source\Synth\Nodes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Synth\Nodes\ModOscilNode.h">
       <Filter>GeneticProgrammingSynthesizer\Source\Synth\Nodes</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\Synth\Nodes\NoiseNode.h">

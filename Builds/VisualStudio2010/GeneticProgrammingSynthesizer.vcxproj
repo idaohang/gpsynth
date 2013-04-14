@@ -149,9 +149,7 @@
     <ClCompile Include="..\..\Source\Synth\GPSynth.cpp" />
     <ClCompile Include="..\..\Source\Synth\Nodes\ADSRNode.cpp" />
     <ClCompile Include="..\..\Source\Synth\Nodes\ConstantNode.cpp" />
-    <ClCompile Include="..\..\Source\Synth\Nodes\FilterNode.cpp" />
     <ClCompile Include="..\..\Source\Synth\Nodes\FunctionNode.cpp" />
-    <ClCompile Include="..\..\Source\Synth\Nodes\ModOscilNode.cpp" />
     <ClCompile Include="..\..\Source\Synth\Nodes\NoiseNode.cpp" />
     <ClCompile Include="..\..\Source\Synth\Nodes\OscilNode.cpp" />
     <ClCompile Include="..\..\Source\Synth\Nodes\TimeNode.cpp" />
@@ -1222,9 +1220,7 @@
     <ClInclude Include="..\..\Source\Synth\GPSynth.h" />
     <ClInclude Include="..\..\Source\Synth\Nodes\ADSRNode.h" />
     <ClInclude Include="..\..\Source\Synth\Nodes\ConstantNode.h" />
-    <ClInclude Include="..\..\Source\Synth\Nodes\FilterNode.h" />
     <ClInclude Include="..\..\Source\Synth\Nodes\FunctionNode.h" />
-    <ClInclude Include="..\..\Source\Synth\Nodes\ModOscilNode.h" />
     <ClInclude Include="..\..\Source\Synth\Nodes\NoiseNode.h" />
     <ClInclude Include="..\..\Source\Synth\Nodes\OscilNode.h" />
     <ClInclude Include="..\..\Source\Synth\Nodes\TimeNode.h" />
