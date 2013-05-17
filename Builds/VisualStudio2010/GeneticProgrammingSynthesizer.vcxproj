@@ -55,7 +55,7 @@
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
-      <AdditionalIncludeDirectories>..\..\JuceLibraryCode;..\..\VST;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\JuceLibraryCode;F:\random big stuff\boost_1_53_0;..\..\VST;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_WINDOWS;DEBUG;_DEBUG;JUCER_VS2010_78A501D=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
@@ -126,35 +126,23 @@
     </Bscmake>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Source\Dependencies\DSPFilters\Bessel.cpp" />
-    <ClCompile Include="..\..\Source\Dependencies\DSPFilters\Biquad.cpp" />
-    <ClCompile Include="..\..\Source\Dependencies\DSPFilters\Butterworth.cpp" />
-    <ClCompile Include="..\..\Source\Dependencies\DSPFilters\Cascade.cpp" />
-    <ClCompile Include="..\..\Source\Dependencies\DSPFilters\ChebyshevI.cpp" />
-    <ClCompile Include="..\..\Source\Dependencies\DSPFilters\ChebyshevII.cpp" />
-    <ClCompile Include="..\..\Source\Dependencies\DSPFilters\Custom.cpp" />
-    <ClCompile Include="..\..\Source\Dependencies\DSPFilters\Design.cpp" />
-    <ClCompile Include="..\..\Source\Dependencies\DSPFilters\Documentation.cpp" />
-    <ClCompile Include="..\..\Source\Dependencies\DSPFilters\Elliptic.cpp" />
-    <ClCompile Include="..\..\Source\Dependencies\DSPFilters\Filter.cpp" />
-    <ClCompile Include="..\..\Source\Dependencies\DSPFilters\Legendre.cpp" />
-    <ClCompile Include="..\..\Source\Dependencies\DSPFilters\Param.cpp" />
-    <ClCompile Include="..\..\Source\Dependencies\DSPFilters\PoleFilter.cpp" />
-    <ClCompile Include="..\..\Source\Dependencies\DSPFilters\RBJ.cpp" />
-    <ClCompile Include="..\..\Source\Dependencies\DSPFilters\RootFinder.cpp" />
-    <ClCompile Include="..\..\Source\Dependencies\DSPFilters\State.cpp" />
     <ClCompile Include="..\..\Source\Plugin\GPPluginEditor.cpp" />
     <ClCompile Include="..\..\Source\Plugin\GPPluginProcessor.cpp" />
     <ClCompile Include="..\..\Source\Synth\GPNetwork.cpp" />
     <ClCompile Include="..\..\Source\Synth\GPSynth.cpp" />
+    <ClCompile Include="..\..\Source\Synth\Nodes\AddNode.cpp" />
     <ClCompile Include="..\..\Source\Synth\Nodes\ADSRNode.cpp" />
     <ClCompile Include="..\..\Source\Synth\Nodes\ConstantNode.cpp" />
     <ClCompile Include="..\..\Source\Synth\Nodes\FunctionNode.cpp" />
+    <ClCompile Include="..\..\Source\Synth\Nodes\LFONode.cpp" />
+    <ClCompile Include="..\..\Source\Synth\Nodes\MixerNode.cpp" />
+    <ClCompile Include="..\..\Source\Synth\Nodes\MultiplyNode.cpp" />
     <ClCompile Include="..\..\Source\Synth\Nodes\NoiseNode.cpp" />
     <ClCompile Include="..\..\Source\Synth\Nodes\OscilNode.cpp" />
+    <ClCompile Include="..\..\Source\Synth\Nodes\SilenceNode.cpp" />
+    <ClCompile Include="..\..\Source\Synth\Nodes\SineNode.cpp" />
     <ClCompile Include="..\..\Source\Synth\Nodes\TimeNode.cpp" />
     <ClCompile Include="..\..\Source\Synth\Nodes\VariableNode.cpp" />
-    <ClCompile Include="..\..\Source\Common\GPFunctions.cpp" />
     <ClCompile Include="..\..\Source\Common\GPRandom.cpp" />
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_basics\buffers\juce_AudioDataConverters.cpp">
       <ExcludedFromBuild>true</ExcludedFromBuild>
@@ -1190,42 +1178,25 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Source\Common\GPHelpers.h" />
-    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\Bessel.h" />
-    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\Biquad.h" />
-    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\Butterworth.h" />
-    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\Cascade.h" />
-    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\ChebyshevI.h" />
-    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\ChebyshevII.h" />
-    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\Common.h" />
-    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\Custom.h" />
-    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\Design.h" />
-    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\Dsp.h" />
-    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\Elliptic.h" />
-    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\Filter.h" />
-    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\Layout.h" />
-    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\Legendre.h" />
-    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\MathSupplement.h" />
-    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\Params.h" />
-    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\PoleFilter.h" />
-    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\RBJ.h" />
-    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\RootFinder.h" />
-    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\SmoothedFilter.h" />
-    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\State.h" />
-    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\Types.h" />
-    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\Utilities.h" />
     <ClInclude Include="..\..\Source\Plugin\GPPluginEditor.h" />
     <ClInclude Include="..\..\Source\Plugin\GPPluginProcessor.h" />
     <ClInclude Include="..\..\Source\Synth\GPNetwork.h" />
     <ClInclude Include="..\..\Source\Synth\GPNode.h" />
+    <ClInclude Include="..\..\Source\Synth\GPPrimitives.h" />
     <ClInclude Include="..\..\Source\Synth\GPSynth.h" />
+    <ClInclude Include="..\..\Source\Synth\Nodes\AddNode.h" />
     <ClInclude Include="..\..\Source\Synth\Nodes\ADSRNode.h" />
     <ClInclude Include="..\..\Source\Synth\Nodes\ConstantNode.h" />
     <ClInclude Include="..\..\Source\Synth\Nodes\FunctionNode.h" />
+    <ClInclude Include="..\..\Source\Synth\Nodes\LFONode.h" />
+    <ClInclude Include="..\..\Source\Synth\Nodes\MixerNode.h" />
+    <ClInclude Include="..\..\Source\Synth\Nodes\MultiplyNode.h" />
     <ClInclude Include="..\..\Source\Synth\Nodes\NoiseNode.h" />
     <ClInclude Include="..\..\Source\Synth\Nodes\OscilNode.h" />
+    <ClInclude Include="..\..\Source\Synth\Nodes\SilenceNode.h" />
+    <ClInclude Include="..\..\Source\Synth\Nodes\SineNode.h" />
     <ClInclude Include="..\..\Source\Synth\Nodes\TimeNode.h" />
     <ClInclude Include="..\..\Source\Synth\Nodes\VariableNode.h" />
-    <ClInclude Include="..\..\Source\Common\GPFunctions.h" />
     <ClInclude Include="..\..\Source\Common\GPMutatableParam.h" />
     <ClInclude Include="..\..\Source\Common\GPParams.h" />
     <ClInclude Include="..\..\Source\Common\GPRandom.h" />

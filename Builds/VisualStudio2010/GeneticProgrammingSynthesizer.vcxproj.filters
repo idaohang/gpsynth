@@ -10,9 +10,6 @@
     <Filter Include="GeneticProgrammingSynthesizer\Source\Dependencies">
       <UniqueIdentifier>{7BD8DA58-53A2-43B7-7C13-FA09270C5CE8}</UniqueIdentifier>
     </Filter>
-    <Filter Include="GeneticProgrammingSynthesizer\Source\Dependencies\DSPFilters">
-      <UniqueIdentifier>{430D16B8-F4BB-F207-4B2F-C531566204B2}</UniqueIdentifier>
-    </Filter>
     <Filter Include="GeneticProgrammingSynthesizer\Source\Plugin">
       <UniqueIdentifier>{4119D650-E5E7-C7FB-CAF1-3C5C0D1E7960}</UniqueIdentifier>
     </Filter>
@@ -312,57 +309,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Source\Dependencies\DSPFilters\Bessel.cpp">
-      <Filter>GeneticProgrammingSynthesizer\Source\Dependencies\DSPFilters</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Dependencies\DSPFilters\Biquad.cpp">
-      <Filter>GeneticProgrammingSynthesizer\Source\Dependencies\DSPFilters</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Dependencies\DSPFilters\Butterworth.cpp">
-      <Filter>GeneticProgrammingSynthesizer\Source\Dependencies\DSPFilters</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Dependencies\DSPFilters\Cascade.cpp">
-      <Filter>GeneticProgrammingSynthesizer\Source\Dependencies\DSPFilters</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Dependencies\DSPFilters\ChebyshevI.cpp">
-      <Filter>GeneticProgrammingSynthesizer\Source\Dependencies\DSPFilters</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Dependencies\DSPFilters\ChebyshevII.cpp">
-      <Filter>GeneticProgrammingSynthesizer\Source\Dependencies\DSPFilters</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Dependencies\DSPFilters\Custom.cpp">
-      <Filter>GeneticProgrammingSynthesizer\Source\Dependencies\DSPFilters</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Dependencies\DSPFilters\Design.cpp">
-      <Filter>GeneticProgrammingSynthesizer\Source\Dependencies\DSPFilters</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Dependencies\DSPFilters\Documentation.cpp">
-      <Filter>GeneticProgrammingSynthesizer\Source\Dependencies\DSPFilters</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Dependencies\DSPFilters\Elliptic.cpp">
-      <Filter>GeneticProgrammingSynthesizer\Source\Dependencies\DSPFilters</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Dependencies\DSPFilters\Filter.cpp">
-      <Filter>GeneticProgrammingSynthesizer\Source\Dependencies\DSPFilters</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Dependencies\DSPFilters\Legendre.cpp">
-      <Filter>GeneticProgrammingSynthesizer\Source\Dependencies\DSPFilters</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Dependencies\DSPFilters\Param.cpp">
-      <Filter>GeneticProgrammingSynthesizer\Source\Dependencies\DSPFilters</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Dependencies\DSPFilters\PoleFilter.cpp">
-      <Filter>GeneticProgrammingSynthesizer\Source\Dependencies\DSPFilters</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Dependencies\DSPFilters\RBJ.cpp">
-      <Filter>GeneticProgrammingSynthesizer\Source\Dependencies\DSPFilters</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Dependencies\DSPFilters\RootFinder.cpp">
-      <Filter>GeneticProgrammingSynthesizer\Source\Dependencies\DSPFilters</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Dependencies\DSPFilters\State.cpp">
-      <Filter>GeneticProgrammingSynthesizer\Source\Dependencies\DSPFilters</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\Source\Synth\GPNetwork.cpp">
       <Filter>GeneticProgrammingSynthesizer\Source\Synth</Filter>
     </ClCompile>
@@ -389,9 +335,6 @@
     </ClCompile>
     <ClCompile Include="..\..\Source\Synth\Nodes\VariableNode.cpp">
       <Filter>GeneticProgrammingSynthesizer\Source\Synth\Nodes</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Common\GPFunctions.cpp">
-      <Filter>GeneticProgrammingSynthesizer\Source\Common</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\Common\GPRandom.cpp">
       <Filter>GeneticProgrammingSynthesizer\Source\Common</Filter>
@@ -1461,77 +1404,26 @@
     <ClCompile Include="..\..\Source\Plugin\GPPluginProcessor.cpp">
       <Filter>GeneticProgrammingSynthesizer\Source\Plugin</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Synth\Nodes\AddNode.cpp">
+      <Filter>GeneticProgrammingSynthesizer\Source\Synth\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Synth\Nodes\LFONode.cpp">
+      <Filter>GeneticProgrammingSynthesizer\Source\Synth\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Synth\Nodes\MixerNode.cpp">
+      <Filter>GeneticProgrammingSynthesizer\Source\Synth\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Synth\Nodes\MultiplyNode.cpp">
+      <Filter>GeneticProgrammingSynthesizer\Source\Synth\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Synth\Nodes\SilenceNode.cpp">
+      <Filter>GeneticProgrammingSynthesizer\Source\Synth\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Synth\Nodes\SineNode.cpp">
+      <Filter>GeneticProgrammingSynthesizer\Source\Synth\Nodes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\Bessel.h">
-      <Filter>GeneticProgrammingSynthesizer\Source\Dependencies\DSPFilters</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\Biquad.h">
-      <Filter>GeneticProgrammingSynthesizer\Source\Dependencies\DSPFilters</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\Butterworth.h">
-      <Filter>GeneticProgrammingSynthesizer\Source\Dependencies\DSPFilters</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\Cascade.h">
-      <Filter>GeneticProgrammingSynthesizer\Source\Dependencies\DSPFilters</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\ChebyshevI.h">
-      <Filter>GeneticProgrammingSynthesizer\Source\Dependencies\DSPFilters</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\ChebyshevII.h">
-      <Filter>GeneticProgrammingSynthesizer\Source\Dependencies\DSPFilters</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\Common.h">
-      <Filter>GeneticProgrammingSynthesizer\Source\Dependencies\DSPFilters</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\Custom.h">
-      <Filter>GeneticProgrammingSynthesizer\Source\Dependencies\DSPFilters</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\Design.h">
-      <Filter>GeneticProgrammingSynthesizer\Source\Dependencies\DSPFilters</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\Dsp.h">
-      <Filter>GeneticProgrammingSynthesizer\Source\Dependencies\DSPFilters</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\Elliptic.h">
-      <Filter>GeneticProgrammingSynthesizer\Source\Dependencies\DSPFilters</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\Filter.h">
-      <Filter>GeneticProgrammingSynthesizer\Source\Dependencies\DSPFilters</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\Layout.h">
-      <Filter>GeneticProgrammingSynthesizer\Source\Dependencies\DSPFilters</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\Legendre.h">
-      <Filter>GeneticProgrammingSynthesizer\Source\Dependencies\DSPFilters</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\MathSupplement.h">
-      <Filter>GeneticProgrammingSynthesizer\Source\Dependencies\DSPFilters</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\Params.h">
-      <Filter>GeneticProgrammingSynthesizer\Source\Dependencies\DSPFilters</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\PoleFilter.h">
-      <Filter>GeneticProgrammingSynthesizer\Source\Dependencies\DSPFilters</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\RBJ.h">
-      <Filter>GeneticProgrammingSynthesizer\Source\Dependencies\DSPFilters</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\RootFinder.h">
-      <Filter>GeneticProgrammingSynthesizer\Source\Dependencies\DSPFilters</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\SmoothedFilter.h">
-      <Filter>GeneticProgrammingSynthesizer\Source\Dependencies\DSPFilters</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\State.h">
-      <Filter>GeneticProgrammingSynthesizer\Source\Dependencies\DSPFilters</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\Types.h">
-      <Filter>GeneticProgrammingSynthesizer\Source\Dependencies\DSPFilters</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Dependencies\DSPFilters\Utilities.h">
-      <Filter>GeneticProgrammingSynthesizer\Source\Dependencies\DSPFilters</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Source\Synth\GPNetwork.h">
       <Filter>GeneticProgrammingSynthesizer\Source\Synth</Filter>
     </ClInclude>
@@ -1561,9 +1453,6 @@
     </ClInclude>
     <ClInclude Include="..\..\Source\Synth\Nodes\VariableNode.h">
       <Filter>GeneticProgrammingSynthesizer\Source\Synth\Nodes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Common\GPFunctions.h">
-      <Filter>GeneticProgrammingSynthesizer\Source\Common</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\Common\GPMutatableParam.h">
       <Filter>GeneticProgrammingSynthesizer\Source\Common</Filter>
@@ -2797,6 +2686,27 @@
     </ClInclude>
     <ClInclude Include="..\..\Source\Plugin\GPPluginProcessor.h">
       <Filter>GeneticProgrammingSynthesizer\Source\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Synth\GPPrimitives.h">
+      <Filter>GeneticProgrammingSynthesizer\Source\Synth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Synth\Nodes\AddNode.h">
+      <Filter>GeneticProgrammingSynthesizer\Source\Synth\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Synth\Nodes\LFONode.h">
+      <Filter>GeneticProgrammingSynthesizer\Source\Synth\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Synth\Nodes\MixerNode.h">
+      <Filter>GeneticProgrammingSynthesizer\Source\Synth\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Synth\Nodes\MultiplyNode.h">
+      <Filter>GeneticProgrammingSynthesizer\Source\Synth\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Synth\Nodes\SilenceNode.h">
+      <Filter>GeneticProgrammingSynthesizer\Source\Synth\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Synth\Nodes\SineNode.h">
+      <Filter>GeneticProgrammingSynthesizer\Source\Synth\Nodes</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
