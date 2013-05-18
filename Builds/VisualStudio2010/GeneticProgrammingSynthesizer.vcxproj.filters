@@ -1422,6 +1422,9 @@
     <ClCompile Include="..\..\Source\Synth\Nodes\SineNode.cpp">
       <Filter>GeneticProgrammingSynthesizer\Source\Synth\Nodes</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Common\JUCEFileIO.cpp">
+      <Filter>GeneticProgrammingSynthesizer\Source\Common</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Source\Synth\GPNetwork.h">
@@ -2707,6 +2710,9 @@
     </ClInclude>
     <ClInclude Include="..\..\Source\Synth\Nodes\SineNode.h">
       <Filter>GeneticProgrammingSynthesizer\Source\Synth\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Common\JUCEFileIO.h">
+      <Filter>GeneticProgrammingSynthesizer\Source\Common</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
