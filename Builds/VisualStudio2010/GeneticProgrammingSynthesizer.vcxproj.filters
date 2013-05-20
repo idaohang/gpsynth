@@ -1398,9 +1398,6 @@
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_plugin_client\VST\juce_VST_Wrapper.cpp">
       <Filter>Juce Library Code</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\Plugin\GPPluginEditor.cpp">
-      <Filter>GeneticProgrammingSynthesizer\Source\Plugin</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\Source\Plugin\GPPluginProcessor.cpp">
       <Filter>GeneticProgrammingSynthesizer\Source\Plugin</Filter>
     </ClCompile>
@@ -1424,6 +1421,12 @@
     </ClCompile>
     <ClCompile Include="..\..\Source\Common\JUCEFileIO.cpp">
       <Filter>GeneticProgrammingSynthesizer\Source\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Plugin\GPPluginEditorJucer.cpp">
+      <Filter>GeneticProgrammingSynthesizer\Source\Plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Plugin\GPPluginEditor.cpp">
+      <Filter>GeneticProgrammingSynthesizer\Source\Plugin</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -2684,9 +2687,6 @@
     <ClInclude Include="..\..\Source\Common\GPHelpers.h">
       <Filter>GeneticProgrammingSynthesizer\Source\Common</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Source\Plugin\GPPluginEditor.h">
-      <Filter>GeneticProgrammingSynthesizer\Source\Plugin</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Source\Plugin\GPPluginProcessor.h">
       <Filter>GeneticProgrammingSynthesizer\Source\Plugin</Filter>
     </ClInclude>
@@ -2713,6 +2713,12 @@
     </ClInclude>
     <ClInclude Include="..\..\Source\Common\JUCEFileIO.h">
       <Filter>GeneticProgrammingSynthesizer\Source\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Plugin\GPPluginEditorJucer.h">
+      <Filter>GeneticProgrammingSynthesizer\Source\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Plugin\GPPluginEditor.h">
+      <Filter>GeneticProgrammingSynthesizer\Source\Plugin</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
