@@ -128,7 +128,7 @@
   <ItemGroup>
     <ClCompile Include="..\..\Source\Common\JUCEFileIO.cpp" />
     <ClCompile Include="..\..\Source\Plugin\GPPluginEditor.cpp" />
-    <ClCompile Include="..\..\Source\Plugin\GPPluginEditorJucer.cpp" />
+    <ClCompile Include="..\..\Source\Plugin\GPPluginEditorComponent.cpp" />
     <ClCompile Include="..\..\Source\Plugin\GPPluginProcessor.cpp" />
     <ClCompile Include="..\..\Source\Synth\GPNetwork.cpp" />
     <ClCompile Include="..\..\Source\Synth\GPSynth.cpp" />
@@ -1182,7 +1182,7 @@
     <ClInclude Include="..\..\Source\Common\GPHelpers.h" />
     <ClInclude Include="..\..\Source\Common\JUCEFileIO.h" />
     <ClInclude Include="..\..\Source\Plugin\GPPluginEditor.h" />
-    <ClInclude Include="..\..\Source\Plugin\GPPluginEditorJucer.h" />
+    <ClInclude Include="..\..\Source\Plugin\GPPluginEditorComponent.h" />
     <ClInclude Include="..\..\Source\Plugin\GPPluginProcessor.h" />
     <ClInclude Include="..\..\Source\Synth\GPNetwork.h" />
     <ClInclude Include="..\..\Source\Synth\GPNode.h" />
