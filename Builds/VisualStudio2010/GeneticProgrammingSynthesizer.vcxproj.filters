@@ -1428,6 +1428,9 @@
     <ClCompile Include="..\..\Source\Plugin\GPPluginEditorComponent.cpp">
       <Filter>GeneticProgrammingSynthesizer\Source\Plugin</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Common\GPParser.cpp">
+      <Filter>GeneticProgrammingSynthesizer\Source\Common</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Source\Synth\GPNetwork.h">
@@ -2719,6 +2722,9 @@
     </ClInclude>
     <ClInclude Include="..\..\Source\Plugin\GPPluginEditorComponent.h">
       <Filter>GeneticProgrammingSynthesizer\Source\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Common\GPParser.h">
+      <Filter>GeneticProgrammingSynthesizer\Source\Common</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
