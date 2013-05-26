@@ -9,10 +9,10 @@ BEGIN
   BEGIN
     BLOCK "040904E4"
     BEGIN
-      VALUE "CompanyName",  "Raw Material Software Ltd.\0"
-      VALUE "FileDescription",  "Genetic Programming Synthesizer\0"
+      VALUE "CompanyName",  "radiohunches software\0"
+      VALUE "FileDescription",  "evosynth\0"
       VALUE "FileVersion",  "1.0.0\0"
-      VALUE "ProductName",  "Genetic Programming Synthesizer\0"
+      VALUE "ProductName",  "evosynth\0"
       VALUE "ProductVersion",  "1.0.0\0"
     END
   END
