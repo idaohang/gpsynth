@@ -1,26 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="GeneticProgrammingSynthesizer">
-      <UniqueIdentifier>{7EBD69EE-A84C-C898-E582-60D27507CCDD}</UniqueIdentifier>
+    <Filter Include="evosynth">
+      <UniqueIdentifier>{220EC477-5DCE-A6F1-5B79-9BF87D182B0B}</UniqueIdentifier>
     </Filter>
-    <Filter Include="GeneticProgrammingSynthesizer\Source">
-      <UniqueIdentifier>{C4FF7A9E-C17C-85A0-0286-068F13780C9A}</UniqueIdentifier>
+    <Filter Include="evosynth\Common">
+      <UniqueIdentifier>{0742B1CF-CD2E-FD8B-206E-27BD09DB1676}</UniqueIdentifier>
     </Filter>
-    <Filter Include="GeneticProgrammingSynthesizer\Source\Dependencies">
-      <UniqueIdentifier>{7BD8DA58-53A2-43B7-7C13-FA09270C5CE8}</UniqueIdentifier>
+    <Filter Include="evosynth\Plugin">
+      <UniqueIdentifier>{42338554-57CF-C497-E513-D90D23C5EFE2}</UniqueIdentifier>
     </Filter>
-    <Filter Include="GeneticProgrammingSynthesizer\Source\Plugin">
-      <UniqueIdentifier>{4119D650-E5E7-C7FB-CAF1-3C5C0D1E7960}</UniqueIdentifier>
+    <Filter Include="evosynth\Synth">
+      <UniqueIdentifier>{C401A335-EE15-FC30-F1C5-6A044825E560}</UniqueIdentifier>
     </Filter>
-    <Filter Include="GeneticProgrammingSynthesizer\Source\Synth">
-      <UniqueIdentifier>{926606F0-F0EB-D625-490B-F0E2DF5FDE00}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="GeneticProgrammingSynthesizer\Source\Synth\Nodes">
-      <UniqueIdentifier>{8797D3AE-6356-A5E6-5FE7-179EC93917B7}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="GeneticProgrammingSynthesizer\Source\Common">
-      <UniqueIdentifier>{3F5190C9-0146-3DB3-1DCF-1D7E21B8798B}</UniqueIdentifier>
+    <Filter Include="evosynth\Synth\Nodes">
+      <UniqueIdentifier>{3F765845-15D3-97AB-2F5A-AB76A51409DF}</UniqueIdentifier>
     </Filter>
     <Filter Include="Juce Modules">
       <UniqueIdentifier>{422C46B7-0467-2DB0-BF3C-16DFCAFD69AC}</UniqueIdentifier>
@@ -309,35 +303,68 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Source\Synth\GPNetwork.cpp">
-      <Filter>GeneticProgrammingSynthesizer\Source\Synth</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Synth\GPSynth.cpp">
-      <Filter>GeneticProgrammingSynthesizer\Source\Synth</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Synth\Nodes\ADSRNode.cpp">
-      <Filter>GeneticProgrammingSynthesizer\Source\Synth\Nodes</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Synth\Nodes\ConstantNode.cpp">
-      <Filter>GeneticProgrammingSynthesizer\Source\Synth\Nodes</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Synth\Nodes\FunctionNode.cpp">
-      <Filter>GeneticProgrammingSynthesizer\Source\Synth\Nodes</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Synth\Nodes\NoiseNode.cpp">
-      <Filter>GeneticProgrammingSynthesizer\Source\Synth\Nodes</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Synth\Nodes\OscilNode.cpp">
-      <Filter>GeneticProgrammingSynthesizer\Source\Synth\Nodes</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Synth\Nodes\TimeNode.cpp">
-      <Filter>GeneticProgrammingSynthesizer\Source\Synth\Nodes</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Synth\Nodes\VariableNode.cpp">
-      <Filter>GeneticProgrammingSynthesizer\Source\Synth\Nodes</Filter>
+    <ClCompile Include="..\..\Source\Common\GPParser.cpp">
+      <Filter>evosynth\Common</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\Common\GPRandom.cpp">
-      <Filter>GeneticProgrammingSynthesizer\Source\Common</Filter>
+      <Filter>evosynth\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Common\JUCEFileIO.cpp">
+      <Filter>evosynth\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Plugin\GPPluginEditor.cpp">
+      <Filter>evosynth\Plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Plugin\GPPluginEditorComponent.cpp">
+      <Filter>evosynth\Plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Plugin\GPPluginProcessor.cpp">
+      <Filter>evosynth\Plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Synth\Nodes\AddNode.cpp">
+      <Filter>evosynth\Synth\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Synth\Nodes\ADSRNode.cpp">
+      <Filter>evosynth\Synth\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Synth\Nodes\ConstantNode.cpp">
+      <Filter>evosynth\Synth\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Synth\Nodes\FunctionNode.cpp">
+      <Filter>evosynth\Synth\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Synth\Nodes\LFONode.cpp">
+      <Filter>evosynth\Synth\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Synth\Nodes\MixerNode.cpp">
+      <Filter>evosynth\Synth\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Synth\Nodes\MultiplyNode.cpp">
+      <Filter>evosynth\Synth\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Synth\Nodes\NoiseNode.cpp">
+      <Filter>evosynth\Synth\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Synth\Nodes\OscilNode.cpp">
+      <Filter>evosynth\Synth\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Synth\Nodes\SilenceNode.cpp">
+      <Filter>evosynth\Synth\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Synth\Nodes\SineNode.cpp">
+      <Filter>evosynth\Synth\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Synth\Nodes\TimeNode.cpp">
+      <Filter>evosynth\Synth\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Synth\Nodes\VariableNode.cpp">
+      <Filter>evosynth\Synth\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Synth\GPNetwork.cpp">
+      <Filter>evosynth\Synth</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Synth\GPSynth.cpp">
+      <Filter>evosynth\Synth</Filter>
     </ClCompile>
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_basics\buffers\juce_AudioDataConverters.cpp">
       <Filter>Juce Modules\juce_audio_basics\buffers</Filter>
@@ -483,6 +510,9 @@
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_formats\format\juce_AudioSubsectionReader.cpp">
       <Filter>Juce Modules\juce_audio_formats\format</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_formats\format\juce_BufferingAudioFormatReader.cpp">
+      <Filter>Juce Modules\juce_audio_formats\format</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_formats\codecs\juce_AiffAudioFormat.cpp">
       <Filter>Juce Modules\juce_audio_formats\codecs</Filter>
     </ClCompile>
@@ -533,6 +563,9 @@
     </ClCompile>
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_processors\format\juce_AudioPluginFormatManager.cpp">
       <Filter>Juce Modules\juce_audio_processors\format</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_processors\format_types\juce_LADSPAPluginFormat.cpp">
+      <Filter>Juce Modules\juce_audio_processors\format_types</Filter>
     </ClCompile>
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_processors\format_types\juce_VSTPluginFormat.cpp">
       <Filter>Juce Modules\juce_audio_processors\format_types</Filter>
@@ -656,6 +689,9 @@
     </ClCompile>
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_core\files\juce_TemporaryFile.cpp">
       <Filter>Juce Modules\juce_core\files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_core\network\juce_IPAddress.cpp">
+      <Filter>Juce Modules\juce_core\network</Filter>
     </ClCompile>
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_core\network\juce_MACAddress.cpp">
       <Filter>Juce Modules\juce_core\network</Filter>
@@ -922,6 +958,9 @@
       <Filter>Juce Modules\juce_graphics\native</Filter>
     </ClCompile>
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_graphics\native\juce_android_GraphicsContext.cpp">
+      <Filter>Juce Modules\juce_graphics\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_graphics\native\juce_freetype_Fonts.cpp">
       <Filter>Juce Modules\juce_graphics\native</Filter>
     </ClCompile>
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_graphics\native\juce_linux_Fonts.cpp">
@@ -1332,6 +1371,9 @@
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_gui_extra\native\juce_linux_WebBrowserComponent.cpp">
       <Filter>Juce Modules\juce_gui_extra\native</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_gui_extra\native\juce_mac_SystemTrayIcon.cpp">
+      <Filter>Juce Modules\juce_gui_extra\native</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_gui_extra\native\juce_win32_ActiveXComponent.cpp">
       <Filter>Juce Modules\juce_gui_extra\native</Filter>
     </ClCompile>
@@ -1398,79 +1440,85 @@
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_plugin_client\VST\juce_VST_Wrapper.cpp">
       <Filter>Juce Library Code</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\Plugin\GPPluginProcessor.cpp">
-      <Filter>GeneticProgrammingSynthesizer\Source\Plugin</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Synth\Nodes\AddNode.cpp">
-      <Filter>GeneticProgrammingSynthesizer\Source\Synth\Nodes</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Synth\Nodes\LFONode.cpp">
-      <Filter>GeneticProgrammingSynthesizer\Source\Synth\Nodes</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Synth\Nodes\MixerNode.cpp">
-      <Filter>GeneticProgrammingSynthesizer\Source\Synth\Nodes</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Synth\Nodes\MultiplyNode.cpp">
-      <Filter>GeneticProgrammingSynthesizer\Source\Synth\Nodes</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Synth\Nodes\SilenceNode.cpp">
-      <Filter>GeneticProgrammingSynthesizer\Source\Synth\Nodes</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Synth\Nodes\SineNode.cpp">
-      <Filter>GeneticProgrammingSynthesizer\Source\Synth\Nodes</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Common\JUCEFileIO.cpp">
-      <Filter>GeneticProgrammingSynthesizer\Source\Common</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Plugin\GPPluginEditor.cpp">
-      <Filter>GeneticProgrammingSynthesizer\Source\Plugin</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Plugin\GPPluginEditorComponent.cpp">
-      <Filter>GeneticProgrammingSynthesizer\Source\Plugin</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Common\GPParser.cpp">
-      <Filter>GeneticProgrammingSynthesizer\Source\Common</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Source\Synth\GPNetwork.h">
-      <Filter>GeneticProgrammingSynthesizer\Source\Synth</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Synth\GPNode.h">
-      <Filter>GeneticProgrammingSynthesizer\Source\Synth</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Synth\GPSynth.h">
-      <Filter>GeneticProgrammingSynthesizer\Source\Synth</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Synth\Nodes\ADSRNode.h">
-      <Filter>GeneticProgrammingSynthesizer\Source\Synth\Nodes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Synth\Nodes\ConstantNode.h">
-      <Filter>GeneticProgrammingSynthesizer\Source\Synth\Nodes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Synth\Nodes\FunctionNode.h">
-      <Filter>GeneticProgrammingSynthesizer\Source\Synth\Nodes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Synth\Nodes\NoiseNode.h">
-      <Filter>GeneticProgrammingSynthesizer\Source\Synth\Nodes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Synth\Nodes\OscilNode.h">
-      <Filter>GeneticProgrammingSynthesizer\Source\Synth\Nodes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Synth\Nodes\TimeNode.h">
-      <Filter>GeneticProgrammingSynthesizer\Source\Synth\Nodes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Synth\Nodes\VariableNode.h">
-      <Filter>GeneticProgrammingSynthesizer\Source\Synth\Nodes</Filter>
+    <ClInclude Include="..\..\Source\Common\GPHelpers.h">
+      <Filter>evosynth\Common</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\Common\GPMutatableParam.h">
-      <Filter>GeneticProgrammingSynthesizer\Source\Common</Filter>
+      <Filter>evosynth\Common</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\Common\GPParams.h">
-      <Filter>GeneticProgrammingSynthesizer\Source\Common</Filter>
+      <Filter>evosynth\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Common\GPParser.h">
+      <Filter>evosynth\Common</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\Common\GPRandom.h">
-      <Filter>GeneticProgrammingSynthesizer\Source\Common</Filter>
+      <Filter>evosynth\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Common\JUCEFileIO.h">
+      <Filter>evosynth\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Plugin\GPPluginEditor.h">
+      <Filter>evosynth\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Plugin\GPPluginEditorComponent.h">
+      <Filter>evosynth\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Plugin\GPPluginProcessor.h">
+      <Filter>evosynth\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Synth\Nodes\AddNode.h">
+      <Filter>evosynth\Synth\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Synth\Nodes\ADSRNode.h">
+      <Filter>evosynth\Synth\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Synth\Nodes\ConstantNode.h">
+      <Filter>evosynth\Synth\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Synth\Nodes\FunctionNode.h">
+      <Filter>evosynth\Synth\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Synth\Nodes\LFONode.h">
+      <Filter>evosynth\Synth\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Synth\Nodes\MixerNode.h">
+      <Filter>evosynth\Synth\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Synth\Nodes\MultiplyNode.h">
+      <Filter>evosynth\Synth\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Synth\Nodes\NoiseNode.h">
+      <Filter>evosynth\Synth\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Synth\Nodes\OscilNode.h">
+      <Filter>evosynth\Synth\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Synth\Nodes\SilenceNode.h">
+      <Filter>evosynth\Synth\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Synth\Nodes\SineNode.h">
+      <Filter>evosynth\Synth\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Synth\Nodes\TimeNode.h">
+      <Filter>evosynth\Synth\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Synth\Nodes\VariableNode.h">
+      <Filter>evosynth\Synth\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Synth\GPNetwork.h">
+      <Filter>evosynth\Synth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Synth\GPNode.h">
+      <Filter>evosynth\Synth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Synth\GPPrimitives.h">
+      <Filter>evosynth\Synth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Synth\GPSynth.h">
+      <Filter>evosynth\Synth</Filter>
     </ClInclude>
     <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_basics\buffers\juce_AudioDataConverters.h">
       <Filter>Juce Modules\juce_audio_basics\buffers</Filter>
@@ -1550,6 +1598,9 @@
     <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_devices\audio_io\juce_AudioIODeviceType.h">
       <Filter>Juce Modules\juce_audio_devices\audio_io</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_devices\audio_io\juce_SystemAudioVolume.h">
+      <Filter>Juce Modules\juce_audio_devices\audio_io</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_devices\midi_io\juce_MidiInput.h">
       <Filter>Juce Modules\juce_audio_devices\midi_io</Filter>
     </ClInclude>
@@ -1593,6 +1644,9 @@
       <Filter>Juce Modules\juce_audio_formats\format</Filter>
     </ClInclude>
     <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_formats\format\juce_AudioSubsectionReader.h">
+      <Filter>Juce Modules\juce_audio_formats\format</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_formats\format\juce_BufferingAudioFormatReader.h">
       <Filter>Juce Modules\juce_audio_formats\format</Filter>
     </ClInclude>
     <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_formats\format\juce_MemoryMappedAudioFormatReader.h">
@@ -1686,9 +1740,6 @@
       <Filter>Juce Modules\juce_audio_processors\format</Filter>
     </ClInclude>
     <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_processors\format_types\juce_AudioUnitPluginFormat.h">
-      <Filter>Juce Modules\juce_audio_processors\format_types</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_processors\format_types\juce_DirectXPluginFormat.h">
       <Filter>Juce Modules\juce_audio_processors\format_types</Filter>
     </ClInclude>
     <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_processors\format_types\juce_LADSPAPluginFormat.h">
@@ -1942,6 +1993,9 @@
     </ClInclude>
     <ClInclude Include="..\..\JuceLibraryCode\modules\juce_core\files\juce_TemporaryFile.h">
       <Filter>Juce Modules\juce_core\files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\JuceLibraryCode\modules\juce_core\network\juce_IPAddress.h">
+      <Filter>Juce Modules\juce_core\network</Filter>
     </ClInclude>
     <ClInclude Include="..\..\JuceLibraryCode\modules\juce_core\network\juce_MACAddress.h">
       <Filter>Juce Modules\juce_core\network</Filter>
@@ -2686,45 +2740,6 @@
     </ClInclude>
     <ClInclude Include="..\..\JuceLibraryCode\JuceHeader.h">
       <Filter>Juce Library Code</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Common\GPHelpers.h">
-      <Filter>GeneticProgrammingSynthesizer\Source\Common</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Plugin\GPPluginProcessor.h">
-      <Filter>GeneticProgrammingSynthesizer\Source\Plugin</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Synth\GPPrimitives.h">
-      <Filter>GeneticProgrammingSynthesizer\Source\Synth</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Synth\Nodes\AddNode.h">
-      <Filter>GeneticProgrammingSynthesizer\Source\Synth\Nodes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Synth\Nodes\LFONode.h">
-      <Filter>GeneticProgrammingSynthesizer\Source\Synth\Nodes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Synth\Nodes\MixerNode.h">
-      <Filter>GeneticProgrammingSynthesizer\Source\Synth\Nodes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Synth\Nodes\MultiplyNode.h">
-      <Filter>GeneticProgrammingSynthesizer\Source\Synth\Nodes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Synth\Nodes\SilenceNode.h">
-      <Filter>GeneticProgrammingSynthesizer\Source\Synth\Nodes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Synth\Nodes\SineNode.h">
-      <Filter>GeneticProgrammingSynthesizer\Source\Synth\Nodes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Common\JUCEFileIO.h">
-      <Filter>GeneticProgrammingSynthesizer\Source\Common</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Plugin\GPPluginEditor.h">
-      <Filter>GeneticProgrammingSynthesizer\Source\Plugin</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Plugin\GPPluginEditorComponent.h">
-      <Filter>GeneticProgrammingSynthesizer\Source\Plugin</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Common\GPParser.h">
-      <Filter>GeneticProgrammingSynthesizer\Source\Common</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
