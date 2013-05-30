@@ -3,8 +3,8 @@ version: 0.1b
 ===== INSTALLATION AND RUNNING =====
 
 TO RUN AS STANDALONE:
-	Move "evosynth.v0.1b.exe" into the "evosynth" folder.
-	Run "evosynth.v0.1b.exe"
+	Run "SimpleVSTHost.exe"
+	When prompted, load "./evosynth/evosynth.v0.1b.dll"
 
 TO INSTALL AS PLUGIN:
 	Move the "evosynth" folder to your VstPlugins directory (likely "C:/Program Files (x86)/VstPlugins")
