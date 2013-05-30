@@ -72,5 +72,6 @@ A:
 		'random' button to replace current bad algorithm with new random-grown one
 		Variable control of LFO's (and more) using sliders
 		Save entire evolution history for later restoring
+		Save current 10 algorithms with VST preset info
 		Novelty search to find good seed population
 		Better visual design!
