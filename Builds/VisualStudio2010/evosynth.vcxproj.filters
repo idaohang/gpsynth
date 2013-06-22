@@ -1440,6 +1440,9 @@
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_plugin_client\VST\juce_VST_Wrapper.cpp">
       <Filter>Juce Library Code</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Synth\Nodes\SplineNode.cpp">
+      <Filter>evosynth\Synth\Nodes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Source\Common\GPHelpers.h">
@@ -2740,6 +2743,9 @@
     </ClInclude>
     <ClInclude Include="..\..\JuceLibraryCode\JuceHeader.h">
       <Filter>Juce Library Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Synth\Nodes\SplineNode.h">
+      <Filter>evosynth\Synth\Nodes</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
