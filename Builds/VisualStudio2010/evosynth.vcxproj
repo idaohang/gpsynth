@@ -143,6 +143,7 @@
     <ClCompile Include="..\..\Source\Synth\Nodes\OscilNode.cpp" />
     <ClCompile Include="..\..\Source\Synth\Nodes\SilenceNode.cpp" />
     <ClCompile Include="..\..\Source\Synth\Nodes\SineNode.cpp" />
+    <ClCompile Include="..\..\Source\Synth\Nodes\SplineNode.cpp" />
     <ClCompile Include="..\..\Source\Synth\Nodes\TimeNode.cpp" />
     <ClCompile Include="..\..\Source\Synth\Nodes\VariableNode.cpp" />
     <ClCompile Include="..\..\Source\Synth\GPNetwork.cpp" />
@@ -1215,6 +1216,7 @@
     <ClInclude Include="..\..\Source\Synth\Nodes\OscilNode.h" />
     <ClInclude Include="..\..\Source\Synth\Nodes\SilenceNode.h" />
     <ClInclude Include="..\..\Source\Synth\Nodes\SineNode.h" />
+    <ClInclude Include="..\..\Source\Synth\Nodes\SplineNode.h" />
     <ClInclude Include="..\..\Source\Synth\Nodes\TimeNode.h" />
     <ClInclude Include="..\..\Source\Synth\Nodes\VariableNode.h" />
     <ClInclude Include="..\..\Source\Synth\GPNetwork.h" />
