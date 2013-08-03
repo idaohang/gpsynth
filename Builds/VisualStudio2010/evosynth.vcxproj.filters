@@ -1,8 +1,15 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
+
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="evosynth">
       <UniqueIdentifier>{220EC477-5DCE-A6F1-5B79-9BF87D182B0B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="evosynth\Dependencies">
+      <UniqueIdentifier>{46C5077B-13D4-9E28-DF0B-754CDBA47D11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="evosynth\Dependencies\WaveTableOsc">
+      <UniqueIdentifier>{9A2357F3-C710-2F3E-5B98-1176B38D4AE0}</UniqueIdentifier>
     </Filter>
     <Filter Include="evosynth\Common">
       <UniqueIdentifier>{0742B1CF-CD2E-FD8B-206E-27BD09DB1676}</UniqueIdentifier>
@@ -12,6 +19,27 @@
     </Filter>
     <Filter Include="evosynth\Synth">
       <UniqueIdentifier>{C401A335-EE15-FC30-F1C5-6A044825E560}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="evosynth\Synth\Nodes">
+      <UniqueIdentifier>{3F765845-15D3-97AB-2F5A-AB76A51409DF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="evosynth\Synth\Nodes\Envelope">
+      <UniqueIdentifier>{F7DBD2A4-A98E-4D1C-D678-3A7721B74616}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="evosynth\Synth\Nodes\Function">
+      <UniqueIdentifier>{EC43CA5A-343A-C8C3-B957-19EEFBD2AF90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="evosynth\Synth\Nodes\Logic">
+      <UniqueIdentifier>{F931AF74-F71E-EC4D-2FB0-66C58B528ABD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="evosynth\Synth\Nodes\Modulation">
+      <UniqueIdentifier>{37AE3316-C9B1-FBF5-F3BC-6152EB48E503}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="evosynth\Synth\Nodes\Terminal">
+      <UniqueIdentifier>{AEA25307-3D02-40BA-1486-AC00BAA38144}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="evosynth\Synth\Nodes\Terminal\Oscillator">
+      <UniqueIdentifier>{CE9E2CA9-1DFB-4E96-6EC6-AD4E5298C527}</UniqueIdentifier>
     </Filter>
     <Filter Include="Juce Modules">
       <UniqueIdentifier>{422C46B7-0467-2DB0-BF3C-16DFCAFD69AC}</UniqueIdentifier>
@@ -298,35 +326,11 @@
     <Filter Include="Juce Library Code">
       <UniqueIdentifier>{8B4D1BAA-6DB4-CAEC-A0FA-271F354D5C61}</UniqueIdentifier>
     </Filter>
-    <Filter Include="evosynth\Synth\Nodes">
-      <UniqueIdentifier>{62b10f36-1588-46ca-8c76-4e7652b68103}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="evosynth\Synth\Nodes\Terminal">
-      <UniqueIdentifier>{eade3465-09a3-4ecc-b10f-2368774f7318}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="evosynth\Synth\Nodes\Terminal\Oscillator">
-      <UniqueIdentifier>{c89930d3-9dff-4088-98b0-7a34fa7f3c39}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="evosynth\Synth\Nodes\Envelope">
-      <UniqueIdentifier>{193cd99b-181a-450e-8231-40a5254986ee}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="evosynth\Synth\Nodes\Function">
-      <UniqueIdentifier>{35f6228c-b6d2-43da-927f-d93a62b6920f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="evosynth\Synth\Nodes\Logic">
-      <UniqueIdentifier>{ebbb9598-fca9-4720-8210-099a6078dbd4}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="evosynth\Synth\Nodes\Modulation">
-      <UniqueIdentifier>{bc05c884-503e-4438-a191-ba26c31bc7e0}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="evosynth\Dependencies">
-      <UniqueIdentifier>{7d735b95-aaf9-4f09-8b96-7b675550e777}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="evosynth\Dependencies\WaveTableOsc">
-      <UniqueIdentifier>{799b5697-3192-489a-875c-5fcc46e1a267}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Source\Dependencies\WaveTableOsc\WaveTableOsc.cpp">
+      <Filter>evosynth\Dependencies\WaveTableOsc</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Common\GPParser.cpp">
       <Filter>evosynth\Common</Filter>
     </ClCompile>
@@ -336,6 +340,12 @@
     <ClCompile Include="..\..\Source\Common\JUCEFileIO.cpp">
       <Filter>evosynth\Common</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Plugin\GPNetworkSlidersComponent.cpp">
+      <Filter>evosynth\Plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Plugin\GPNetworkDisplayComponent.cpp">
+      <Filter>evosynth\Plugin</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Plugin\GPPluginEditor.cpp">
       <Filter>evosynth\Plugin</Filter>
     </ClCompile>
@@ -344,6 +354,87 @@
     </ClCompile>
     <ClCompile Include="..\..\Source\Plugin\GPPluginProcessor.cpp">
       <Filter>evosynth\Plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Synth\Nodes\Envelope\ADSREnvelopeNode.cpp">
+      <Filter>evosynth\Synth\Nodes\Envelope</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Synth\Nodes\Envelope\GainNode.cpp">
+      <Filter>evosynth\Synth\Nodes\Envelope</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Synth\Nodes\Envelope\LFOEnvelopeNode.cpp">
+      <Filter>evosynth\Synth\Nodes\Envelope</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Synth\Nodes\Envelope\SplineEnvelopeNode.cpp">
+      <Filter>evosynth\Synth\Nodes\Envelope</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Synth\Nodes\Function\AddNode.cpp">
+      <Filter>evosynth\Synth\Nodes\Function</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Synth\Nodes\Function\CosineNode.cpp">
+      <Filter>evosynth\Synth\Nodes\Function</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Synth\Nodes\Function\FunctionNode.cpp">
+      <Filter>evosynth\Synth\Nodes\Function</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Synth\Nodes\Function\MultiplyNode.cpp">
+      <Filter>evosynth\Synth\Nodes\Function</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Synth\Nodes\Function\SineNode.cpp">
+      <Filter>evosynth\Synth\Nodes\Function</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Synth\Nodes\Function\SubtractNode.cpp">
+      <Filter>evosynth\Synth\Nodes\Function</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Synth\Nodes\Logic\MixerNode.cpp">
+      <Filter>evosynth\Synth\Nodes\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Synth\Nodes\Logic\SwitchNode.cpp">
+      <Filter>evosynth\Synth\Nodes\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Synth\Nodes\Modulation\AMNode.cpp">
+      <Filter>evosynth\Synth\Nodes\Modulation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Synth\Nodes\Modulation\PMNode.cpp">
+      <Filter>evosynth\Synth\Nodes\Modulation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Synth\Nodes\Terminal\ADSRTerminalNode.cpp">
+      <Filter>evosynth\Synth\Nodes\Terminal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Synth\Nodes\Terminal\ConstantNode.cpp">
+      <Filter>evosynth\Synth\Nodes\Terminal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Synth\Nodes\Terminal\LFOTerminalNode.cpp">
+      <Filter>evosynth\Synth\Nodes\Terminal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Synth\Nodes\Terminal\NoiseNode.cpp">
+      <Filter>evosynth\Synth\Nodes\Terminal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Synth\Nodes\Terminal\Oscillator\SawOscNode.cpp">
+      <Filter>evosynth\Synth\Nodes\Terminal\Oscillator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Synth\Nodes\Terminal\Oscillator\SinOscNode.cpp">
+      <Filter>evosynth\Synth\Nodes\Terminal\Oscillator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Synth\Nodes\Terminal\Oscillator\SquareOscNode.cpp">
+      <Filter>evosynth\Synth\Nodes\Terminal\Oscillator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Synth\Nodes\Terminal\Oscillator\TriangleOscNode.cpp">
+      <Filter>evosynth\Synth\Nodes\Terminal\Oscillator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Synth\Nodes\Terminal\SilenceNode.cpp">
+      <Filter>evosynth\Synth\Nodes\Terminal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Synth\Nodes\Terminal\SplineTerminalNode.cpp">
+      <Filter>evosynth\Synth\Nodes\Terminal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Synth\Nodes\Terminal\TimeNode.cpp">
+      <Filter>evosynth\Synth\Nodes\Terminal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Synth\Nodes\Terminal\VariableNode.cpp">
+      <Filter>evosynth\Synth\Nodes\Terminal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Synth\Nodes\Terminal\WaveTableNode.cpp">
+      <Filter>evosynth\Synth\Nodes\Terminal</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\Synth\GPNetwork.cpp">
       <Filter>evosynth\Synth</Filter>
@@ -453,6 +544,12 @@
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_devices\native\juce_linux_Midi.cpp">
       <Filter>Juce Modules\juce_audio_devices\native</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_devices\native\juce_mac_AudioCDBurner.mm">
+      <Filter>Juce Modules\juce_audio_devices\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_devices\native\juce_mac_AudioCDReader.mm">
+      <Filter>Juce Modules\juce_audio_devices\native</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_devices\native\juce_mac_CoreAudio.cpp">
       <Filter>Juce Modules\juce_audio_devices\native</Filter>
     </ClCompile>
@@ -528,6 +625,18 @@
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_formats\sampler\juce_Sampler.cpp">
       <Filter>Juce Modules\juce_audio_formats\sampler</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_plugin_client\AU\juce_AU_Wrapper.mm">
+      <Filter>Juce Modules\juce_audio_plugin_client\AU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_plugin_client\RTAS\juce_RTAS_MacUtilities.mm">
+      <Filter>Juce Modules\juce_audio_plugin_client\RTAS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_plugin_client\VST\juce_VST_Wrapper.mm">
+      <Filter>Juce Modules\juce_audio_plugin_client\VST</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_plugin_client\AAX\juce_AAX_Wrapper.mm">
+      <Filter>Juce Modules\juce_audio_plugin_client\AAX</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_processors\processors\juce_AudioProcessor.cpp">
       <Filter>Juce Modules\juce_audio_processors\processors</Filter>
     </ClCompile>
@@ -548,6 +657,9 @@
     </ClCompile>
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_processors\format\juce_AudioPluginFormatManager.cpp">
       <Filter>Juce Modules\juce_audio_processors\format</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_processors\format_types\juce_AudioUnitPluginFormat.mm">
+      <Filter>Juce Modules\juce_audio_processors\format_types</Filter>
     </ClCompile>
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_processors\format_types\juce_LADSPAPluginFormat.cpp">
       <Filter>Juce Modules\juce_audio_processors\format_types</Filter>
@@ -774,6 +886,21 @@
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_core\native\juce_linux_Threads.cpp">
       <Filter>Juce Modules\juce_core\native</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_core\native\juce_mac_Files.mm">
+      <Filter>Juce Modules\juce_core\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_core\native\juce_mac_Network.mm">
+      <Filter>Juce Modules\juce_core\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_core\native\juce_mac_Strings.mm">
+      <Filter>Juce Modules\juce_core\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_core\native\juce_mac_SystemStats.mm">
+      <Filter>Juce Modules\juce_core\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_core\native\juce_mac_Threads.mm">
+      <Filter>Juce Modules\juce_core\native</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_core\native\juce_posix_NamedPipe.cpp">
       <Filter>Juce Modules\juce_core\native</Filter>
     </ClCompile>
@@ -843,7 +970,13 @@
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_events\native\juce_android_Messaging.cpp">
       <Filter>Juce Modules\juce_events\native</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_events\native\juce_ios_MessageManager.mm">
+      <Filter>Juce Modules\juce_events\native</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_events\native\juce_linux_Messaging.cpp">
+      <Filter>Juce Modules\juce_events\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_events\native\juce_mac_MessageManager.mm">
       <Filter>Juce Modules\juce_events\native</Filter>
     </ClCompile>
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_events\native\juce_win32_Messaging.cpp">
@@ -906,9 +1039,6 @@
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_graphics\geometry\juce_PathStrokeType.cpp">
       <Filter>Juce Modules\juce_graphics\geometry</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_graphics\geometry\juce_RectangleList.cpp">
-      <Filter>Juce Modules\juce_graphics\geometry</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_graphics\placement\juce_Justification.cpp">
       <Filter>Juce Modules\juce_graphics\placement</Filter>
     </ClCompile>
@@ -951,6 +1081,12 @@
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_graphics\native\juce_linux_Fonts.cpp">
       <Filter>Juce Modules\juce_graphics\native</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_graphics\native\juce_mac_CoreGraphicsContext.mm">
+      <Filter>Juce Modules\juce_graphics\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_graphics\native\juce_mac_Fonts.mm">
+      <Filter>Juce Modules\juce_graphics\native</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_graphics\native\juce_win32_Direct2DGraphicsContext.cpp">
       <Filter>Juce Modules\juce_graphics\native</Filter>
     </ClCompile>
@@ -985,6 +1121,9 @@
       <Filter>Juce Modules\juce_gui_basics\mouse</Filter>
     </ClCompile>
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_gui_basics\mouse\juce_MouseEvent.cpp">
+      <Filter>Juce Modules\juce_gui_basics\mouse</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_gui_basics\mouse\juce_MouseInactivityDetector.cpp">
       <Filter>Juce Modules\juce_gui_basics\mouse</Filter>
     </ClCompile>
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_gui_basics\mouse\juce_MouseInputSource.cpp">
@@ -1293,6 +1432,12 @@
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_gui_basics\native\juce_android_Windowing.cpp">
       <Filter>Juce Modules\juce_gui_basics\native</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_gui_basics\native\juce_ios_UIViewComponentPeer.mm">
+      <Filter>Juce Modules\juce_gui_basics\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_gui_basics\native\juce_ios_Windowing.mm">
+      <Filter>Juce Modules\juce_gui_basics\native</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_gui_basics\native\juce_linux_Clipboard.cpp">
       <Filter>Juce Modules\juce_gui_basics\native</Filter>
     </ClCompile>
@@ -1300,6 +1445,21 @@
       <Filter>Juce Modules\juce_gui_basics\native</Filter>
     </ClCompile>
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_gui_basics\native\juce_linux_Windowing.cpp">
+      <Filter>Juce Modules\juce_gui_basics\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_gui_basics\native\juce_mac_FileChooser.mm">
+      <Filter>Juce Modules\juce_gui_basics\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_gui_basics\native\juce_mac_MainMenu.mm">
+      <Filter>Juce Modules\juce_gui_basics\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_gui_basics\native\juce_mac_MouseCursor.mm">
+      <Filter>Juce Modules\juce_gui_basics\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_gui_basics\native\juce_mac_NSViewComponentPeer.mm">
+      <Filter>Juce Modules\juce_gui_basics\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_gui_basics\native\juce_mac_Windowing.mm">
       <Filter>Juce Modules\juce_gui_basics\native</Filter>
     </ClCompile>
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_gui_basics\native\juce_win32_DragAndDrop.cpp">
@@ -1350,13 +1510,25 @@
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_gui_extra\native\juce_android_WebBrowserComponent.cpp">
       <Filter>Juce Modules\juce_gui_extra\native</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_gui_extra\native\juce_ios_UIViewComponent.mm">
+      <Filter>Juce Modules\juce_gui_extra\native</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_gui_extra\native\juce_linux_SystemTrayIcon.cpp">
       <Filter>Juce Modules\juce_gui_extra\native</Filter>
     </ClCompile>
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_gui_extra\native\juce_linux_WebBrowserComponent.cpp">
       <Filter>Juce Modules\juce_gui_extra\native</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_gui_extra\native\juce_mac_AppleRemote.mm">
+      <Filter>Juce Modules\juce_gui_extra\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_gui_extra\native\juce_mac_NSViewComponent.mm">
+      <Filter>Juce Modules\juce_gui_extra\native</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_gui_extra\native\juce_mac_SystemTrayIcon.cpp">
+      <Filter>Juce Modules\juce_gui_extra\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_gui_extra\native\juce_mac_WebBrowserComponent.mm">
       <Filter>Juce Modules\juce_gui_extra\native</Filter>
     </ClCompile>
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_gui_extra\native\juce_win32_ActiveXComponent.cpp">
@@ -1425,92 +1597,11 @@
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_plugin_client\VST\juce_VST_Wrapper.cpp">
       <Filter>Juce Library Code</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\Synth\Nodes\Terminal\Oscillator\SawOscNode.cpp">
-      <Filter>evosynth\Synth\Nodes\Terminal\Oscillator</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Synth\Nodes\Terminal\Oscillator\SinOscNode.cpp">
-      <Filter>evosynth\Synth\Nodes\Terminal\Oscillator</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Synth\Nodes\Terminal\Oscillator\SquareOscNode.cpp">
-      <Filter>evosynth\Synth\Nodes\Terminal\Oscillator</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Synth\Nodes\Terminal\Oscillator\TriangleOscNode.cpp">
-      <Filter>evosynth\Synth\Nodes\Terminal\Oscillator</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Synth\Nodes\Terminal\ADSRTerminalNode.cpp">
-      <Filter>evosynth\Synth\Nodes\Terminal</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Synth\Nodes\Terminal\ConstantNode.cpp">
-      <Filter>evosynth\Synth\Nodes\Terminal</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Synth\Nodes\Terminal\LFOTerminalNode.cpp">
-      <Filter>evosynth\Synth\Nodes\Terminal</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Synth\Nodes\Terminal\NoiseNode.cpp">
-      <Filter>evosynth\Synth\Nodes\Terminal</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Synth\Nodes\Terminal\SilenceNode.cpp">
-      <Filter>evosynth\Synth\Nodes\Terminal</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Synth\Nodes\Terminal\SplineTerminalNode.cpp">
-      <Filter>evosynth\Synth\Nodes\Terminal</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Synth\Nodes\Terminal\TimeNode.cpp">
-      <Filter>evosynth\Synth\Nodes\Terminal</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Synth\Nodes\Terminal\VariableNode.cpp">
-      <Filter>evosynth\Synth\Nodes\Terminal</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Synth\Nodes\Terminal\WaveTableNode.cpp">
-      <Filter>evosynth\Synth\Nodes\Terminal</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Synth\Nodes\Envelope\ADSREnvelopeNode.cpp">
-      <Filter>evosynth\Synth\Nodes\Envelope</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Synth\Nodes\Envelope\GainNode.cpp">
-      <Filter>evosynth\Synth\Nodes\Envelope</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Synth\Nodes\Envelope\LFOEnvelopeNode.cpp">
-      <Filter>evosynth\Synth\Nodes\Envelope</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Synth\Nodes\Envelope\SplineEnvelopeNode.cpp">
-      <Filter>evosynth\Synth\Nodes\Envelope</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Synth\Nodes\Function\AddNode.cpp">
-      <Filter>evosynth\Synth\Nodes\Function</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Synth\Nodes\Function\CosineNode.cpp">
-      <Filter>evosynth\Synth\Nodes\Function</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Synth\Nodes\Function\FunctionNode.cpp">
-      <Filter>evosynth\Synth\Nodes\Function</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Synth\Nodes\Function\MultiplyNode.cpp">
-      <Filter>evosynth\Synth\Nodes\Function</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Synth\Nodes\Function\SineNode.cpp">
-      <Filter>evosynth\Synth\Nodes\Function</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Synth\Nodes\Function\SubtractNode.cpp">
-      <Filter>evosynth\Synth\Nodes\Function</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Synth\Nodes\Logic\MixerNode.cpp">
-      <Filter>evosynth\Synth\Nodes\Logic</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Synth\Nodes\Logic\SwitchNode.cpp">
-      <Filter>evosynth\Synth\Nodes\Logic</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Synth\Nodes\Modulation\AMNode.cpp">
-      <Filter>evosynth\Synth\Nodes\Modulation</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Synth\Nodes\Modulation\PMNode.cpp">
-      <Filter>evosynth\Synth\Nodes\Modulation</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Dependencies\WaveTableOsc\WaveTableOsc.cpp">
-      <Filter>evosynth\Dependencies\WaveTableOsc</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\Source\Dependencies\WaveTableOsc\WaveTableOsc.h">
+      <Filter>evosynth\Dependencies\WaveTableOsc</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\Common\GPHelpers.h">
       <Filter>evosynth\Common</Filter>
     </ClInclude>
@@ -1529,6 +1620,12 @@
     <ClInclude Include="..\..\Source\Common\JUCEFileIO.h">
       <Filter>evosynth\Common</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\Plugin\GPNetworkSlidersComponent.h">
+      <Filter>evosynth\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Plugin\GPNetworkDisplayComponent.h">
+      <Filter>evosynth\Plugin</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\Plugin\GPPluginEditor.h">
       <Filter>evosynth\Plugin</Filter>
     </ClInclude>
@@ -1537,6 +1634,87 @@
     </ClInclude>
     <ClInclude Include="..\..\Source\Plugin\GPPluginProcessor.h">
       <Filter>evosynth\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Synth\Nodes\Envelope\ADSREnvelopeNode.h">
+      <Filter>evosynth\Synth\Nodes\Envelope</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Synth\Nodes\Envelope\GainNode.h">
+      <Filter>evosynth\Synth\Nodes\Envelope</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Synth\Nodes\Envelope\LFOEnvelopeNode.h">
+      <Filter>evosynth\Synth\Nodes\Envelope</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Synth\Nodes\Envelope\SplineEnvelopeNode.h">
+      <Filter>evosynth\Synth\Nodes\Envelope</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Synth\Nodes\Function\AddNode.h">
+      <Filter>evosynth\Synth\Nodes\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Synth\Nodes\Function\CosineNode.h">
+      <Filter>evosynth\Synth\Nodes\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Synth\Nodes\Function\FunctionNode.h">
+      <Filter>evosynth\Synth\Nodes\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Synth\Nodes\Function\MultiplyNode.h">
+      <Filter>evosynth\Synth\Nodes\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Synth\Nodes\Function\SineNode.h">
+      <Filter>evosynth\Synth\Nodes\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Synth\Nodes\Function\SubtractNode.h">
+      <Filter>evosynth\Synth\Nodes\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Synth\Nodes\Logic\MixerNode.h">
+      <Filter>evosynth\Synth\Nodes\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Synth\Nodes\Logic\SwitchNode.h">
+      <Filter>evosynth\Synth\Nodes\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Synth\Nodes\Modulation\AMNode.h">
+      <Filter>evosynth\Synth\Nodes\Modulation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Synth\Nodes\Modulation\PMNode.h">
+      <Filter>evosynth\Synth\Nodes\Modulation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Synth\Nodes\Terminal\ADSRTerminalNode.h">
+      <Filter>evosynth\Synth\Nodes\Terminal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Synth\Nodes\Terminal\ConstantNode.h">
+      <Filter>evosynth\Synth\Nodes\Terminal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Synth\Nodes\Terminal\LFOTerminalNode.h">
+      <Filter>evosynth\Synth\Nodes\Terminal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Synth\Nodes\Terminal\NoiseNode.h">
+      <Filter>evosynth\Synth\Nodes\Terminal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Synth\Nodes\Terminal\Oscillator\SawOscNode.h">
+      <Filter>evosynth\Synth\Nodes\Terminal\Oscillator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Synth\Nodes\Terminal\Oscillator\SinOscNode.h">
+      <Filter>evosynth\Synth\Nodes\Terminal\Oscillator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Synth\Nodes\Terminal\Oscillator\SquareOscNode.h">
+      <Filter>evosynth\Synth\Nodes\Terminal\Oscillator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Synth\Nodes\Terminal\Oscillator\TriangleOscNode.h">
+      <Filter>evosynth\Synth\Nodes\Terminal\Oscillator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Synth\Nodes\Terminal\SilenceNode.h">
+      <Filter>evosynth\Synth\Nodes\Terminal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Synth\Nodes\Terminal\SplineTerminalNode.h">
+      <Filter>evosynth\Synth\Nodes\Terminal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Synth\Nodes\Terminal\TimeNode.h">
+      <Filter>evosynth\Synth\Nodes\Terminal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Synth\Nodes\Terminal\VariableNode.h">
+      <Filter>evosynth\Synth\Nodes\Terminal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Synth\Nodes\Terminal\WaveTableNode.h">
+      <Filter>evosynth\Synth\Nodes\Terminal</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\Synth\GPNetwork.h">
       <Filter>evosynth\Synth</Filter>
@@ -2363,6 +2541,9 @@
     <ClInclude Include="..\..\JuceLibraryCode\modules\juce_gui_basics\mouse\juce_MouseEvent.h">
       <Filter>Juce Modules\juce_gui_basics\mouse</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\JuceLibraryCode\modules\juce_gui_basics\mouse\juce_MouseInactivityDetector.h">
+      <Filter>Juce Modules\juce_gui_basics\mouse</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\JuceLibraryCode\modules\juce_gui_basics\mouse\juce_MouseInputSource.h">
       <Filter>Juce Modules\juce_gui_basics\mouse</Filter>
     </ClInclude>
@@ -2482,6 +2663,12 @@
     </ClInclude>
     <ClInclude Include="..\..\JuceLibraryCode\modules\juce_gui_basics\menus\juce_PopupMenu.h">
       <Filter>Juce Modules\juce_gui_basics\menus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\JuceLibraryCode\modules\juce_gui_basics\layout\juce_AnimatedPosition.h">
+      <Filter>Juce Modules\juce_gui_basics\layout</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\JuceLibraryCode\modules\juce_gui_basics\layout\juce_AnimatedPositionBehaviours.h">
+      <Filter>Juce Modules\juce_gui_basics\layout</Filter>
     </ClInclude>
     <ClInclude Include="..\..\JuceLibraryCode\modules\juce_gui_basics\layout\juce_ComponentAnimator.h">
       <Filter>Juce Modules\juce_gui_basics\layout</Filter>
@@ -2771,90 +2958,47 @@
     <ClInclude Include="..\..\JuceLibraryCode\JuceHeader.h">
       <Filter>Juce Library Code</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Source\Synth\Nodes\Terminal\Oscillator\SawOscNode.h">
-      <Filter>evosynth\Synth\Nodes\Terminal\Oscillator</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Synth\Nodes\Terminal\Oscillator\SinOscNode.h">
-      <Filter>evosynth\Synth\Nodes\Terminal\Oscillator</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Synth\Nodes\Terminal\Oscillator\SquareOscNode.h">
-      <Filter>evosynth\Synth\Nodes\Terminal\Oscillator</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Synth\Nodes\Terminal\Oscillator\TriangleOscNode.h">
-      <Filter>evosynth\Synth\Nodes\Terminal\Oscillator</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Synth\Nodes\Terminal\ADSRTerminalNode.h">
-      <Filter>evosynth\Synth\Nodes\Terminal</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Synth\Nodes\Terminal\ConstantNode.h">
-      <Filter>evosynth\Synth\Nodes\Terminal</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Synth\Nodes\Terminal\LFOTerminalNode.h">
-      <Filter>evosynth\Synth\Nodes\Terminal</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Synth\Nodes\Terminal\NoiseNode.h">
-      <Filter>evosynth\Synth\Nodes\Terminal</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Synth\Nodes\Terminal\SilenceNode.h">
-      <Filter>evosynth\Synth\Nodes\Terminal</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Synth\Nodes\Terminal\SplineTerminalNode.h">
-      <Filter>evosynth\Synth\Nodes\Terminal</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Synth\Nodes\Terminal\TimeNode.h">
-      <Filter>evosynth\Synth\Nodes\Terminal</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Synth\Nodes\Terminal\VariableNode.h">
-      <Filter>evosynth\Synth\Nodes\Terminal</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Synth\Nodes\Terminal\WaveTableNode.h">
-      <Filter>evosynth\Synth\Nodes\Terminal</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Synth\Nodes\Envelope\ADSREnvelopeNode.h">
-      <Filter>evosynth\Synth\Nodes\Envelope</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Synth\Nodes\Envelope\GainNode.h">
-      <Filter>evosynth\Synth\Nodes\Envelope</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Synth\Nodes\Envelope\LFOEnvelopeNode.h">
-      <Filter>evosynth\Synth\Nodes\Envelope</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Synth\Nodes\Envelope\SplineEnvelopeNode.h">
-      <Filter>evosynth\Synth\Nodes\Envelope</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Synth\Nodes\Function\AddNode.h">
-      <Filter>evosynth\Synth\Nodes\Function</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Synth\Nodes\Function\CosineNode.h">
-      <Filter>evosynth\Synth\Nodes\Function</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Synth\Nodes\Function\FunctionNode.h">
-      <Filter>evosynth\Synth\Nodes\Function</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Synth\Nodes\Function\MultiplyNode.h">
-      <Filter>evosynth\Synth\Nodes\Function</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Synth\Nodes\Function\SineNode.h">
-      <Filter>evosynth\Synth\Nodes\Function</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Synth\Nodes\Function\SubtractNode.h">
-      <Filter>evosynth\Synth\Nodes\Function</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Synth\Nodes\Logic\MixerNode.h">
-      <Filter>evosynth\Synth\Nodes\Logic</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Synth\Nodes\Logic\SwitchNode.h">
-      <Filter>evosynth\Synth\Nodes\Logic</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Synth\Nodes\Modulation\AMNode.h">
-      <Filter>evosynth\Synth\Nodes\Modulation</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Synth\Nodes\Modulation\PMNode.h">
-      <Filter>evosynth\Synth\Nodes\Modulation</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Dependencies\WaveTableOsc\WaveTableOsc.h">
-      <Filter>evosynth\Dependencies\WaveTableOsc</Filter>
-    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\JuceLibraryCode\modules\juce_audio_basics\juce_module_info">
+      <Filter>Juce Modules\juce_audio_basics</Filter>
+    </None>
+    <None Include="..\..\JuceLibraryCode\modules\juce_audio_devices\juce_module_info">
+      <Filter>Juce Modules\juce_audio_devices</Filter>
+    </None>
+    <None Include="..\..\JuceLibraryCode\modules\juce_audio_formats\juce_module_info">
+      <Filter>Juce Modules\juce_audio_formats</Filter>
+    </None>
+    <None Include="..\..\JuceLibraryCode\modules\juce_audio_plugin_client\juce_module_info">
+      <Filter>Juce Modules\juce_audio_plugin_client</Filter>
+    </None>
+    <None Include="..\..\JuceLibraryCode\modules\juce_audio_processors\juce_module_info">
+      <Filter>Juce Modules\juce_audio_processors</Filter>
+    </None>
+    <None Include="..\..\JuceLibraryCode\modules\juce_audio_utils\juce_module_info">
+      <Filter>Juce Modules\juce_audio_utils</Filter>
+    </None>
+    <None Include="..\..\JuceLibraryCode\modules\juce_core\juce_module_info">
+      <Filter>Juce Modules\juce_core</Filter>
+    </None>
+    <None Include="..\..\JuceLibraryCode\modules\juce_data_structures\juce_module_info">
+      <Filter>Juce Modules\juce_data_structures</Filter>
+    </None>
+    <None Include="..\..\JuceLibraryCode\modules\juce_events\juce_module_info">
+      <Filter>Juce Modules\juce_events</Filter>
+    </None>
+    <None Include="..\..\JuceLibraryCode\modules\juce_graphics\juce_module_info">
+      <Filter>Juce Modules\juce_graphics</Filter>
+    </None>
+    <None Include="..\..\JuceLibraryCode\modules\juce_gui_basics\juce_module_info">
+      <Filter>Juce Modules\juce_gui_basics</Filter>
+    </None>
+    <None Include="..\..\JuceLibraryCode\modules\juce_gui_extra\juce_module_info">
+      <Filter>Juce Modules\juce_gui_extra</Filter>
+    </None>
+    <None Include="..\..\JuceLibraryCode\modules\juce_audio_plugin_client\RTAS\juce_RTAS_WinResources.rsr">
+      <Filter>Juce Library Code</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include=".\resources.rc">

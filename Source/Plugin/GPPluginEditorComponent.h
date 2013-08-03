@@ -1,26 +1,24 @@
 /*
   ==============================================================================
 
-  This is an automatically generated file created by the Jucer!
-
-  Creation date:  29 May 2013 10:43:57pm
+  This is an automatically generated GUI class created by the Introjucer!
 
   Be careful when adding custom code to these files, as only the code within
   the "//[xyz]" and "//[/xyz]" sections will be retained when the file is loaded
   and re-saved.
 
-  Jucer version: 1.12
+  Created with Introjucer version: 3.1.0
 
   ------------------------------------------------------------------------------
 
-  The Jucer is part of the JUCE library - "Jules' Utility Class Extensions"
-  Copyright 2004-6 by Raw Material Software ltd.
+  The Introjucer is part of the JUCE library - "Jules' Utility Class Extensions"
+  Copyright 2004-13 by Raw Material Software Ltd.
 
   ==============================================================================
 */
 
-#ifndef __JUCER_HEADER_GENETICPROGRAMMINGSYNTHESIZERCOMPONENT_GPPLUGINEDITORCOMPONENT_90DB6DAF__
-#define __JUCER_HEADER_GENETICPROGRAMMINGSYNTHESIZERCOMPONENT_GPPLUGINEDITORCOMPONENT_90DB6DAF__
+#ifndef __JUCE_HEADER_A5A671BF6408B931__
+#define __JUCE_HEADER_A5A671BF6408B931__
 
 //[Headers]     -- You can add your own extra header files here --
 #include "GPPluginProcessor.h"
@@ -71,21 +69,23 @@ private:
     //[/UserVariables]
 
     //==============================================================================
-    Slider* fitness;
-    Slider* algonum;
-    Label* title;
-    Label* algolabel;
-    Label* fitlabel;
-    Label* gasetlabel;
-    Label* playsetlabel;
-    Slider* gain;
-    Label* gainlabel;
-    TextButton* save;
-    ImageButton* logo;
-    TextButton* load;
-    Label* RHSlabel;
-    TextButton* nextgen;
-    TextButton* prevgen;
+    ScopedPointer<Slider> fitness;
+    ScopedPointer<Slider> algonum;
+    ScopedPointer<Label> title;
+    ScopedPointer<Label> algolabel;
+    ScopedPointer<Label> fitlabel;
+    ScopedPointer<Label> gasetlabel;
+    ScopedPointer<Label> playsetlabel;
+    ScopedPointer<Slider> gain;
+    ScopedPointer<Label> gainlabel;
+    ScopedPointer<TextButton> save;
+    ScopedPointer<ImageButton> logo;
+    ScopedPointer<TextButton> load;
+    ScopedPointer<Label> RHSlabel;
+    ScopedPointer<TextButton> nextgen;
+    ScopedPointer<TextButton> prevgen;
+    ScopedPointer<TextButton> edit;
+    ScopedPointer<TextButton> random;
 
 
     //==============================================================================
@@ -95,4 +95,4 @@ private:
 //[EndFile] You can add extra defines here...
 //[/EndFile]
 
-#endif   // __JUCER_HEADER_GENETICPROGRAMMINGSYNTHESIZERCOMPONENT_GPPLUGINEDITORCOMPONENT_90DB6DAF__
+#endif   // __JUCE_HEADER_A5A671BF6408B931__
